@@ -1,6 +1,6 @@
 # Lecture - 01
 
-We Studied about how to create very first file in HTML 🗃️ using notepad and then we installed IDE 🧑‍💻 for better performance and coding faster.
+We will learn about how to create very first file in HTML 🗃️  Insallation Setup of IDE 🧑‍💻 and some other cool concepts.
 
 [![Full Stack Web Development](https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA "Full Stack Web Development")](https://youtu.be/52klv1JkQF8)
 
