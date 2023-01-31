@@ -46,7 +46,7 @@ _**For Example:**_
 ```
 
 ```js
-<Start tag> Element content </Start tag>
+<Start tag> Element content </End tag>
 <h1> My First Heading </h1>
 ```
 
