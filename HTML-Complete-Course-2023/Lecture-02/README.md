@@ -5,46 +5,79 @@
 > HTML is the standard markup language for creating Web pages".
 > HTML describes the structure of a Web page with the series of elements
 
-### Why we use these HTML elements what's theirR meaning? 👇
+_Eample of HTML Websites:_
 
-```html
-<!DOCTYPE html> ➡️ declaration represents the document type, and helps browsers
-to display web pages correctly. declaration is not case sensitive but it's Best
-Practice.
+[WikiPedia](https://en.wikipedia.org/wiki/Main_Page "WikiPedia")
 
-<html>
-  ➡️ element is the root element of an HTML page
+## What is an HTML Element?
 
-  <head>
-    ➡️ element contains meta information about the HTML page-
+> An HTML element is defined by a start tag, some content, and an end tag
 
-    <title>Lecture 02</title>
-    ➡️ element specifies a title for the HTML page (which is shown in the
-    browser's title bar or in the page's tab)
+_**For Example:**_
 
-    <body>
-      ➡️ element defines the document's body, and it is a container for all the
-      visible contents, such as headings, paragraphs, images, hyperlinks,
-      tables, lists, etc.
-    </body>
-  </head>
-</html>
+```js
+<tagname> Content goes here... </tagname>
 ```
 
-### What are HTML Elements ? 👇
-
-> HTML element is everything from the start tag to the end tag:
-
-```html
-<tagname>Content goes here...</tagname> Start tag Element content End tag
+```js
+<Start tag> Element content </End tag>
+<h1> My First Heading </h1>
 ```
 
-_**Note**_:🪧
+_**Note:**_
 
-> Some HTML elements have no content (like the `<br>` element).
+> Some HTML elements have no content
+
+```js
+(like the <br> element)
+```
 
 > These elements are called empty elements.
-> 🪧 Empty elements do not have an end tag! `</end>`
+
+_**Empty Elements**_
+
+> Empty elements do not have an end tag
+
+_**Note:**_
+
+The content inside the `<body>` section (the white area above) will be displayed in a browser.
+
+The content inside the
+`<title>`element will be shown in the browser's title bar or in the page's tab.
+
+### Usage of Major HTML Elements Meaning 👇
+
+```html
+<!DOCTYPE html>
+```
+
+> `<!DOCTYPE html>` ➡️ declaration represents the document type, and helps browsers
+> to display web pages correctly. declaration is not case sensitive but it's Best
+> Practice.
+
+```html
+<html></html>
+```
+
+> ➡️ `<html>` element is the root element of an HTML page
+
+```html
+<head></head>
+```
+
+> `<head>`➡️ element contains meta information about the HTML page-
+
+```html
+<title>Lecture 02</title>
+```
+
+> `<title>`➡️ element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+
+```html
+<body></body>
+```
+
+> `<body>`➡️ element defines the document's body, and it is a _**container**_ for all the visible contents, such as ➡️ `<h1>headings</h1>` ,➡️ `<p>paragraphs </p>`, images `<img src="">`, `<a href="">hyperlinks</a>` ,`<table>tables</table>`, `<li>lists</li>`, etc.
 
 #### Nested HTML Elements: ➡️ 👇
 
@@ -52,7 +85,7 @@ HTML elements can be nested (this means that elements can contain other elements
 
 > All HTML documents consist of nested HTML elements.
 
-```html: ⬇️
+```html
 <!DOCTYPE html>
 Element is the root element
 <html>
@@ -64,5 +97,6 @@ inside the <body> element there are two other elements: <h1> and <p>:
 My first paragraph.
 <p> hssoc
 </p>
-
+</body>
+</html>
 ```
