@@ -1,6 +1,6 @@
 # Lecture -02
 
-## What is HTML ? and Why we use it 😎? ⬇️
+## What is HTML ? Usage of Major HTML Elements 😎? ⬇️
 
 > HTML is the standard markup language for creating Web pages".
 > HTML describes the structure of a Web page with the series of elements
