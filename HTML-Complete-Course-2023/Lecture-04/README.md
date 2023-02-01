@@ -1,6 +1,6 @@
 # Lecture - 04
 
-## What are HTML Attributes?
+## What are HTML Attributes Img and a Tag Element?
 
 **HTML** _Attributes_ provide additional information about HTML elements.
 
