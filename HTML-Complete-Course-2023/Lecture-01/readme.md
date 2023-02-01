@@ -60,3 +60,43 @@ We will learn about how to create very first file in HTML 🗃️ Insallation Se
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
+```
+
+## What is an HTML Element?
+
+> An HTML element is defined by a start tag, some content, and an end tag
+
+_**For Example:**_
+
+```js
+<tagname> Content goes here... </tagname>
+```
+
+```js
+<Start tag> Element content </End tag>
+<h1> My First Heading </h1>
+```
+
+_**Note:**_
+
+> Some HTML elements have no content
+
+```js
+(like the <br> element)
+```
+
+> These elements are called empty elements.
+
+_**Empty Elements**_
+
+> Empty elements do not have an end tag
+
+_**Note:**_
+
+The content inside the `<body>` section (the white area above) will be displayed in a browser.
+
+The content inside the
+`<title>`element will be shown in the browser's title bar or in the page's tab.
+>>>>>>> 75a8a32eb1754618d229336e6a54f866b01af4ad
