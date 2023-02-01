@@ -1,6 +1,6 @@
 # Lecture -03
 
-## What are Comments? How to Write Comments in HTML ? 👇
+## We will Discuss Headings, Paragraph, Pre Tag, Horizontal Line and Comments? 👇
 
 > HTML comments are not displayed in the browser, but they can help document
 
