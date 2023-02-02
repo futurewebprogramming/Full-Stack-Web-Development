@@ -1,6 +1,6 @@
 # Lecture -05
 
-## HTML Styles and Other Important formating
+## HTML Styles and Inportant Text formating
 
 > HTML style attribute is used to add styles to an element, such as color, font, size, and more.
 
