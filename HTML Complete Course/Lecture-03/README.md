@@ -5,43 +5,12 @@
 Headings
 Paragraphs
 Links
-Lists
 Images 👇
+br
+hr &
+Pre Elements
 
-> HTML comments are not displayed in the browser, but they can help document
-
-```html
-<!-- I am Comment -->
-```
-
-Comments can also be used to hide content.
-Comments are also great for debugging HTML
-
-> Shortcut Key:
-
-```js
-CTRL + / Control + Forward Slash
-```
-
-### How to Write Dummy Content in HTML ? 👇⬇️
-
-> to genrate dummy content in HTML write lorem vs code will give you suggestion just enter it.
-
-```html
-lorem ipsum dolor sit amet
-```
-
-lorem ipsum dolor sit amet
-
-> Short Cut
-
-To Genrate Specific Words
-
-_**lorem10 and hit Enter**_
-
-> this will genrate 10 words for you and also you can enter as many as you want
-
-#### What are Headings and Types of Headings in HTML ? 👇⬇️
+### What are Headings and Types of Headings in HTML ? 👇⬇️
 
 > HTML headings are titles or subtitles that you want to display on a webpage.
 
@@ -77,8 +46,6 @@ Search engines use the headings to index the structure and content of your web p
 <p>Defines a paragraph</p>
 ```
 
-<p>I am  a paragraph</p>
-
 #### HTML Line Breaks
 
 The HTML `<br>` element defines a line break.
@@ -91,6 +58,95 @@ Use `<br>` if you want a line break (a new line) without starting a new paragrap
 ```
 
 <p>This is<br />a paragraph<br />with line breaks.</p>
+
+
+## Image Element
+
+```html
+<img
+  src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA"
+/>
+```
+
+### Image Element Main Attributes
+
+**_src_**
+
+> to Provide Image Source.
+
+```js
+<img src="img1.png">
+```
+
+**_Alt Attribute_**
+
+> If iamge not load properly due to any reason than alt Tag will show to user.
+
+```js
+<img src="img1.png" alt="I am image One">
+```
+
+<img
+src="img1.png" alt="Image Not Loaded Properly, I am Alternative Text">
+
+_**Width and Height Attributes**_
+
+> To Specify image Width and Height we use widht and height Attribute
+
+```js
+<img src="img1.png" alt="I am image One" width="200px" height="200px">
+```
+
+<img
+src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="400px" height="200px" title="Full Stack Development Course">
+_**Absolute URL**_
+
+> Links to an external source that is hosted on another website
+
+```html
+<img src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="200px" height="200px"
+```
+
+<img
+src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="400px" height="200px">
+
+_**Relative URL**_
+
+> Links to internal source that is hosted within the website.
+
+```js
+<img src="img1.png" alt="I am image One" width="200px" height="200px">
+```
+
+### Link Element
+
+> A Tag is used for attach any link any external or internal soruce.
+
+```js
+<a href="https://www.youtube.com/@futureprogramming/">Future Programming</a>
+```
+
+<a
+href="https://www.youtube.com/@futureprogramming/" title="Future Programming">Future Programming</a>
+
+_**Href Attribute**_
+
+> Specifies the URL of the page the link goes to
+
+_**Absolute URL**_
+
+> Links to an external source that is hosted on another website
+
+```html
+<h2>Absolute URLs</h2>
+<p><a href="https://www.github.com/">Github</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+```
+
+_**Relative URL**_
+
+> Links to internal source that is hosted within the website.
+
 
 #### HTML Horizontal Rules 👇⬇️
 

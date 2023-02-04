@@ -1,6 +1,21 @@
 # Lecture - 04
 
-## What are HTML Attributes Img and a Tag Element?
+## What are HTML Attributes Comments & how to write dummy content in HTML?
+
+> HTML comments are not displayed in the browser, but they can help document
+
+```html
+<!-- I am Comment -->
+```
+
+Comments can also be used to hide content.
+Comments are also great for debugging HTML
+
+> Shortcut Key:
+
+```js
+CTRL + / Control + Forward Slash
+```
 
 **HTML** _Attributes_ provide additional information about HTML elements.
 
@@ -43,75 +58,20 @@ _Single or Double Quotes?_
 ' I am Inside Single Qoute' " I am Inside Double Qoute "
 ```
 
-## Image Element
+### How to Write Dummy Content in HTML ? 👇⬇️
+
+> to genrate dummy content in HTML write lorem vs code will give you suggestion just enter it.
 
 ```html
-<img
-  src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA"
-/>
+lorem ipsum dolor sit amet
 ```
 
-### Image Element Main Attributes
+lorem ipsum dolor sit amet
 
-**_src_**
+> Short Cut
 
-> to Provide Image Source.
+To Genrate Specific Words
 
-```js
-<img src="img1.png">
-```
+_**lorem10 and hit Enter**_
 
-**_Alt Attribute_**
-
-> If iamge not load properly due to any reason than alt Tag will show to user.
-
-```js
-<img src="img1.png" alt="I am image One">
-```
-
-<img
-src="img1.png" alt="Image Not Loaded Properly, I am Alternative Text">
-
-_**Width and Height Attributes**_
-
-> To Specify image Width and Height we use widht and height Attribute
-
-```js
-<img src="img1.png" alt="I am image One" width="200px" height="200px">
-```
-
-<img
-src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="400px" height="200px" title="Full Stack Development Course">
-_**Absolute URL**_
-
-> Links to an external source that is hosted on another website
-
-```html
-<img src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="200px" height="200px"
-```
-
-<img
-src="https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA" alt="I am image One" width="400px" height="200px">
-
-_**Relative URL**_
-
-> Links to internal source that is hosted within the website.
-
-```js
-<img src="img1.png" alt="I am image One" width="200px" height="200px">
-```
-
-_**Link Element**_
-
-> A Tag is used for attach any link any external or internal soruce.
-
-```js
-<a href="https://www.youtube.com/@futureprogramming/">Future Programming</a>
-```
-
-<a
-href="https://www.youtube.com/@futureprogramming/" title="Future Programming">Future Programming</a>
-
-_**Href Attribute**_
-
-> Specifies the URL of the page the link goes to
+> this will genrate 10 words for you and also you can enter as many as you want

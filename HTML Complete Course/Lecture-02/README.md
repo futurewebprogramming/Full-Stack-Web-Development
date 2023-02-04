@@ -6,6 +6,8 @@ in Previous lecture we have installed our IDE and also installed some usefull Ex
 
 we will see how to use our extensions also we will learn about introudction of HTML and so on..
 
+[![Full Stack Web Development](https://i.ytimg.com/vi/7GoKdXAwI9c/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvbwpml3MX1frFyxLFmHOBacVDmg "Introduction to HTML")](https://youtu.be/7GoKdXAwI9c)
+
 ## Introduction to HTML 😎? ⬇️
 
 What is HTML and its importance
@@ -23,13 +25,13 @@ Lot's of Confusion on the difference between HTML elements and Tags but i try to
 
 ### HTML tags
 
->are just opening and closing tags without any content in between.
+> are just opening and closing tags without any content in between.
 
 For Example
 
 ```html
-<p> </p>are called HTML tags/elements
-
+<p></p>
+are called HTML tags/elements
 ```
 
 ## HTML Element
@@ -39,21 +41,22 @@ For Example
 _**For Example:**_
 
 ```html
-<h1> Heading 1 </h1> this is element now not just tags
-
+<h1>Heading 1</h1>
+this is element now not just tags
 ```
 
 is called HTML Element
 
->to more clarity jump around to this stack overflow debate
-[Difference B/W HTML Elements](https://stackoverflow.com/questions/8937384/what-is-the-difference-between-html-tags-and-elements)
+> to more clarity jump around to this stack overflow debate
+> [Difference B/W HTML Elements](https://stackoverflow.com/questions/8937384/what-is-the-difference-between-html-tags-and-elements)
 
 _**Note:**_
 
 > Some HTML Tags have no content
 
 ```html
-(like the <br> Tag)
+(like the <br />
+Tag)
 ```
 
 > These tags are called empty tags/elements.
