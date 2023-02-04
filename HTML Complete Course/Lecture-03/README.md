@@ -1,5 +1,8 @@
 # Lecture -03
 
+In lecure 02 we have studied about introduction to html, what are elements and difference between elment and tags and structure of HTML elements. 🥰
+
+In this Lecture we will study about: 👇
 ## Basic HTML Elements
 
 Headings
@@ -8,7 +11,7 @@ Links
 Images 👇
 br
 hr &
-Pre Tagss
+Pre Tags
 
 ### What are Headings and Types of Headings in HTML ? 👇⬇️
 
