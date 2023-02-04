@@ -1,6 +1,12 @@
 # Lecture -03
 
-## We will Discuss Headings, Paragraph, Pre Tag, Horizontal Line and Comments? 👇
+## Basic HTML Elements
+
+Headings
+Paragraphs
+Links
+Lists
+Images 👇
 
 > HTML comments are not displayed in the browser, but they can help document
 

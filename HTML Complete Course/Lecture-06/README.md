@@ -1,73 +1,78 @@
 # Lecture -06
 
-## HTML Links Explained
+## HTML `class` and `id` Attribute
 
-### What are links  ?
+HTML classes and IDs are used to select and style specific HTML elements with CSS also classes and IDs can be used to select and manipulate HTML elements in JavasScript.
 
-We already have discussed links in our previous lecture, but in this lecture we will study in detail about links.
+### Classes?
 
-HTML links allow you to connect your web pages together, and to other web pages on the internet. Here's how you can create links in HTML:
-
-Also let me again expalain about
-`Absolute URLs vs. Relative URLs` with Example.
+Class is used to specify a `class attribute` to an HTML element. The value of the class attribute is the name of the class `For example:`
 
 ```html
-<h3>Absolute URLs</h3>
-<p><a href="https://google.com/">Google</a></p>
-<p><a href="https://developer.mozilla.org/">MDN</a></p>
+<p class="highlight">This is a paragraph with a highlight class</p>
 ```
+
+### Multiple Classes
+
+Multiple elements can share the same class name
 
 ```html
-<h3>Relative URLs</h3>
-<p><a href="about.html">About US</a></p>
-<p><a href="../services.html/">Services</a></p>
+<p class="highlight para">This is a paragraph with a highlight class</p>
 ```
 
-#### Linking to other pages
+>In CSS, classes are selected using a dot `(.)` before the class name.
 
-You can link to other pages on your website by using relative paths. For example, if you have a file named "`about.html`" in the same directory as the current page, you can link to it using the following code:
+For Example:
+
+```css
+.highlight {
+  background-color: yellow;
+}
+```
+
+### ID?
+
+An ID is a `unique identifier` for a single element. An ID is defined by adding an id attribute to an HTML element.
+
+#### ID Difference with Class
+
+As we know id is uniuqe and we cannot use same id for other elements.
+
+The value of the id attribute is the name of the ID, and each element can only have one `unique ID`.
+
+ `For example:`
 
 ```html
-<a href="about.html">About</a>
+<p id="first">This is a paragraph with a unique ID</p>
 ```
 
-#### Linking to specific parts of a page
+>In CSS, IDs are selected using a hash `(#)` before the ID name.
 
-You can link to specific parts of a page by using the `id` attribute. For example, you can create a named anchor on a page like this:
+For example:
 
-```html
-<a id="top">Top of the Page</a>
+```css
+#first {
+  font-weight: bold;
+}
 ```
 
-And then link to it from another page or from another part of the same page like this:
+### In JavaScript
 
-```html
-<a href="#top">Go to Top</a>
-```
+Classes and IDs can be used to select and manipulate HTML elements.
 
-#### Linking to email addresses
+#### Class
 
- You can create a link that will open the user's email client and pre-populate the "To" field with an email address. Use the following syntax:
-
-```html
-<a href="mailto:example@example.com">Send Email</a>
-```
-
-#### Opening links in a new tab
-
- You can specify that a link should open in a new tab by using the target attribute and setting it to "`_blank`".
-
-#### Use an Image as a Link
-
-```html
-<a href="https://google.com">
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" style="width:42px;height:42px;">
-</a>
-```
-
-Button as a Link
+You can select elements with a specific class using the `document.getElementsByClassName()` method, which returns an array-like object of all elements with that class name. For example:
 
 ```js
-<button onclick="document.location='/practice.html'">Do Practice</button>
+var elements = document.getElementsByClassName("highlight");
+```
+
+#### ID
+
+You can select a single element with a specific ID using the `document.getElementById()` method, which returns the first element with that ID. For example:
+
+```js
+var element = document.getElementById("first");
 
 ```
