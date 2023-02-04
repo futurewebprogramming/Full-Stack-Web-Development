@@ -8,7 +8,7 @@ Links
 Images 👇
 br
 hr &
-Pre Elements
+Pre Tagss
 
 ### What are Headings and Types of Headings in HTML ? 👇⬇️
 

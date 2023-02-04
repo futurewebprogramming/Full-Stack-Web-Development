@@ -1,56 +1,6 @@
 # Lecture -05
 
-## HTML Styles  Text formating
-
-> HTML style attribute is used to add styles to an element, such as color, font, size, and more.
-
-```html
-<tagname style="property:value;"></tagname>
-```
-
-> The property is a CSS property. The value is a CSS value.
-
-### Background Color
-
-<p
-style="background-color:blue;
-">
-I am a paragraph.
-</p>
-
-> CSS background-color property defines the background color for HTML element.
-
-### Text Color
-
-> CSS color property defines the text color for element
-
-<p
-style="color:yellow"
->
-  I am a Yellow Color Text paragraph.
-</p>
-
-### Fonts
-
-> CSS font-family property defines the font to be used for element
-
-<p
-  style="font-size:20px; font-family:verdana; color:blue"
->
-  I am a paragraph.
-</p>
-
-### Text Alignment
-
-> CSS text-align property defines the horizontal text alignment HTML element
-
-<p
-  style="font-size:20px; font-family:verdana; color:blue; background-color:powderblue; text-align:center"
->
-I am a Center Aligned paragraph
-</p>
-
-### HTML Formatting Elements
+## Text formating
 
 > Formatting elements were designed to display special types of text
 
@@ -166,17 +116,17 @@ USA
 
 ### `<cite>` Tag
 
->`<cite>` tag defines the title of a creative work (e.g a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+> `<cite>` tag defines the title of a creative work (e.g a book, a poem, a song, a movie, a painting, a sculpture, etc.).
 
 for example:
 
 <img src="https://th.bing.com/th/id/OIP.yCEFQDme4_a34fhpUDnJjwHaKd?pid=ImgDet&rs=1" width=400px height=300px>
 
-<cite>The Rail</cite> 
+<cite>The Rail</cite>
 Oil Painting by Jhon Doe
 
 #### `<bdo>` for Bi-Directional Override
->to change/override current text direction
+
+> to change/override current text direction
 
 <bdo dir="rtl">This line will be written from right to left</bdo>
-
