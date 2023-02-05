@@ -7,13 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture -06</title>
     <style>
+        .para {
+            background-color: blueviolet;
+            padding: 20px;
+            color: white;
+        }
 
+        .second-para {
+            color: black;
+        }
+
+        #last {
+            background-color: red;
+        }
     </style>
 </head>
 
 <body>
 
-   
+    <h2 class="para">Lecutre -06</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque nihil facilis, dolores, aspernatur voluptates
+        sequi facere sit quidem quia nulla quo repellendus similique dicta sed animi excepturi voluptatum non?</p>
+    <p class="para second-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, incidunt commodi
+        harum autem mollitia qui
+        provident fuga odio non. Tenetur temporibus ipsam sed quod esse est eaque debitis, assumenda voluptatibus?</p>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, incidunt commodi harum autem
+        mollitia qui
+        provident fuga odio non. Tenetur temporibus ipsam sed quod esse est eaque debitis, assumenda voluptatibus?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, incidunt commodi harum autem mollitia qui
+        provident fuga odio non. Tenetur temporibus ipsam sed quod esse est eaque debitis, assumenda voluptatibus?</p>
+    <p id="last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, incidunt commodi harum autem
+        mollitia qui
+        provident fuga odio non. Tenetur temporibus ipsam sed quod esse est eaque debitis, assumenda voluptatibus?</p>
+
+    <script>
+        let paragraph = document.getElementsByClassName( 'para' );
+        console.log( paragraph )
+        let lastpara = document.getElementById( 'last' );
+        console.log( lastpara );
+    </script>
 </body>
 
 </html>
