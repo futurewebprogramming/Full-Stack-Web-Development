@@ -11,11 +11,15 @@ HTML links allow you to connect your web pages together, and to other web pages 
 Also let me again expalain about
 `Absolute URLs vs. Relative URLs` with Example.
 
+>Absolute URLs are External Links of Any Website 
+
 ```html
 <h3>Absolute URLs</h3>
 <p><a href="https://google.com/">Google</a></p>
 <p><a href="https://developer.mozilla.org/">MDN</a></p>
 ```
+
+>Relative URLs are Internal Links within your Website.
 
 ```html
 <h3>Relative URLs</h3>
