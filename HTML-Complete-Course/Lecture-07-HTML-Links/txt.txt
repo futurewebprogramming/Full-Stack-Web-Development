@@ -1,0 +1,17 @@
+<!-- absoulte url example -->
+    <a href="https://google.com/" target="_blank">Google</a>
+    <!-- realtive url example -->
+    <a href="index.html">Checout Our Amazing Website</a>
+    <a href="#top">Go to Bottom</a>
+    <a href="index.html#footer">Checout our Website Footer</a>
+    <div class="container"></div>
+    <h2 id="top">Bottom</h2>
+
+    <a href="mailto:futureprogrammingofficial@gmail.com">Send Email</a>
+    <a href="mailto:dummy@gmail.com">Send Email</a>
+
+    <a href="https://google.com/" target="new">
+        <img src="/img.png" alt="">
+    </a>
+    <button style="background-color: yellow; border-radius: 10px; padding: 14px;"
+        onclick="document.location='index.html'">Button </button>

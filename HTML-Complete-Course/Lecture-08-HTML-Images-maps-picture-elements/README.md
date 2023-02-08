@@ -66,7 +66,7 @@ The map tag is used to `define` the `image map`. You can give the map a unique n
 
 ```html
 <map name="mapname">
-  <!-- Links go here -->
+<area shape="rect" coords="10,10,50,50" href="http://www.example.com">
 </map>
 ```
 

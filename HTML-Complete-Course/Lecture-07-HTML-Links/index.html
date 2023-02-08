@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture -07</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 20px auto;
+            text-align: center;
+
+        }
+
+        .container {
+            height: 160vh;
+            background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #bottom {
+            transition: all 1s;
+        }
+
+        .btn {
+            background-color: yellow;
+            padding: 10px;
+            margin: 20px 20px;
+            display: inline-block;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: blueviolet;
+            height: 80px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 22px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid yellow;
+            color: rgb(5, 5, 5);
+        }
+
+        .footer {
+
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            height: 80px;
+            padding: 20px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a target="_blank" href="https://google.com/">Google</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="top">Lecture -07</h2>
+    <!-- links -->
+    <a href="dummy.html#anotherpage" class="btn">Go to Dummy </a>
+    <a href="#bottom" class="btn">Go to Bottom</a>
+    <div class="container">
+
+    </div>
+    <div id="bottom">
+        <h2>I am Bottom of the Page</h2>
+        <a href="#top">Back to Top</a>
+    </div>
+
+    <div class="footer" id="footer">
+        &copy; 2023 futureProgramming All Rights Reserverd
+    </div>
+
+</body>
+
+</html>
