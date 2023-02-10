@@ -5,34 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture -07</title>
-    <style>
-        .container {
-            background: url('img.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity: 0.2;
-            padding: 20px;
-            color: white;
-        }
-    </style>
+    <title>Lecture -08</title>
+
 </head>
 
 <body>
-    <h2>Lecture -07</h2>
-    <h3>Image Map</h3>
-    <div class="container">
-        <div class="left-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias nostrum corporis soluta veritatis
-                earum. Odit, et? Quia molestias velit, esse excepturi, dolores totam rem, quas fugiat sed molestiae
-                minima.</p>
-        </div>
-        <div class="right-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam officiis repudiandae
-                praesentium vitae sequi dolorum voluptatum asperiores nam in debitis error rerum non harum
-                reprehenderit, quis, dolore culpa iste?</p>
-        </div>
-    </div>
+    <h2>Lecture -08</h2>
+    <!-- <img src="img.png" alt="" usemap="#fullstack">
+    <map name="fullstack">
+        <area shape="rect" coords="105,71,304,270" href="https://google.com" alt="">
+    </map> -->
+    <picture>
+        <source media="(min-width: 450px)" srcset="img.png">
+        <source media="(max-width: 450px)" srcset="/workplace.jpg">
+        <img src="img.png" alt="">
+    </picture>
 </body>
 
 </html>
