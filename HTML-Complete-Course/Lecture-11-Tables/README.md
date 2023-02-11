@@ -41,9 +41,7 @@ Table Cell can contain all sorts of HTML elements: like, text, images, lists, li
 
 Table headers used to add table headings so we use `<th>` tag stands for _**table heading**_ instead of `<td>` tag
 
-
-
-```html
+>By default, text inside `<th>` elements are bold and centered we can change it as we want.
 
 ```html
 <table>
@@ -58,7 +56,6 @@ Table headers used to add table headings so we use `<th>` tag stands for _**tabl
     <td>Linus</td>
   </tr>
 </table>
-
 ```
 ### Vertical Table Headers
 
@@ -84,8 +81,6 @@ Table headers used to add table headings so we use `<th>` tag stands for _**tabl
 
 ```
 
->By default, text inside <th> elements are bold and centered we can change it as we want.
-
 ### Table Borders
 
 we can add table border as we want. we can add on `<table>` `<td> <th>`tags via css. 
@@ -99,7 +94,6 @@ we can add table border as we want. we can add on `<table>` `<td> <th>`tags via 
 </style>
 ```
 
-
 #### Collapsed Table Borders
 
 But as we defined table border, we will see we have double border around our table to avoid this issue. we use 
@@ -112,7 +106,6 @@ But as we defined table border, we will see we have double border around our tab
         }
 </style>
 ```
-
 ### Table Caption
 
 We can Specify Table caption using `<caption>` tag.
@@ -140,7 +133,6 @@ We can Specify Table caption using `<caption>` tag.
 
 ```
 
-
 ### Padding & Spacing
 
 Cell padding is the space between the cell edges and the cell content
@@ -164,7 +156,6 @@ colspan attribute represents the number of columns to span
 ```html
  <table>
         <caption>Result Table</caption>
-        <thead>
             <tr>
                 <th colspan="2">Name</th>
                 <th>Class</th>
@@ -172,8 +163,6 @@ colspan attribute represents the number of columns to span
                 <th>Obtained Marks</th>
                 <th>Total Marks</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td>Future</td>
                 <td>Programing</td>
@@ -182,36 +171,93 @@ colspan attribute represents the number of columns to span
                 <td>450</td>
                 <td>500</td>
             </tr>
-        </tbody>
-        <tfoot>
+    </table>
+```
+<table>
+        <caption>Result Table</caption>
             <tr>
-                <td>JavaScript</td>
+                <th colspan="2">Name</th>
+                <th>Class</th>
+                <th>Rank</th>
+                <th>Obtained Marks</th>
+                <th>Total Marks</th>
+            </tr>
+            <tr>
+                <td>Future</td>
                 <td>Programing</td>
-                <td>MS</td>
+                <td >MS</td>
                 <td>A++</td>
                 <td>450</td>
                 <td>500</td>
             </tr>
-        </tfoot>
     </table>
-```
-
 
 ### Rowspan
 
 Span cell over multiple rows
 
+```html
+ <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Future</td>
+        </tr>
+        <tr>
+            <td>Programming</td>
+        </tr>
+        <tr> 
+            <th rowspan="2">Class</th>
+            <td>MS</td>
+        </tr>
+        <tr>
+            <td>MSc</td>
+        </tr>
+        <tr>
+            <th>Roll Number</th>
+            <td>1</td>
+        </tr>
+    </table>
+```
+
+ <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Future</td>
+        </tr>
+        <tr>
+            <td>Programming</td>
+        </tr>
+        <tr> 
+            <th rowspan="2">Class</th>
+            <td>MS</td>
+        </tr>
+        <tr>
+            <td>MSc</td>
+        </tr>
+        <tr>
+            <th>Roll Number</th>
+            <td>1</td>
+        </tr>
+    </table>
+    
+#### Table Colgroup
+
+Colgroup tag used to style specific columns of a table
+
+```html
+ <colgroup>
+            <col span="2">
+            <col span="1" style="background-color: yellow;">
+            <col span="1" style="background-color: darkblue;">
+        </colgroup>
+
+```
 
 #### Table Styling
-
 #### Zebra Stripes effect
 
 >add a background color on every other table row, you will get a nice zebra stripes effect
 
 >To style every other table row element, use the :nth-child(even)
 
-
-#### Table Colgroup
-
-Colgroup tag used to style specific columns of a table
-
+We will cover Table Styling in CSS Module. 
