@@ -61,23 +61,39 @@ specifies the location of the favicon file.
 
 
 ```html
-Define the character set used:
+
 <meta charset="UTF-8">
-Define keywords for search engines:
+Define the character set used:
+
+>"UTF-8" character set is a type of character encoding 
+that represents the text on a web page 
+using a standardized set of characters.
+ UTF-8 stands for "Unicode Transformation Format 8-bit"
+and is a widely-used character encoding 
+that supports a large number of characters
+from many different languages and scripts.
+
+By specifying the character set as UTF-8 in the meta element, 
+the web page is telling the browser to 
+expect text encoded in UTF-8 and to render
+it accordingly. This helps ensure that the
+text is displayed correctly, 
+regardless of the language or script used.
 
 <meta name="keywords" content="HTML, CSS, JavaScript">
-Define a description of your web page:
+Define keywords for search engines:
 
 <meta name="description" content="Free Web tutorials">
-Define the author of a page:
+Define a description of your web page:
 
 <meta name="author" content="John Doe">
-Refresh document every 30 seconds:
+Define the author of a page:
 
 <meta http-equiv="refresh" content="30">
-Setting the viewport to make your website look good on all devices:
+Refresh document every 30 seconds:
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Setting the viewport to make your website look good on all devices:
 ```
 Eample:
 ```html
@@ -100,7 +116,6 @@ This gives the browser instructions on how to control the page's dimensions and 
 
 #### initial-scale=1.0 
 >part sets the initial zoom level when the page is first loaded by the browser.
-
 
 
 ### HTML `<script>` Element

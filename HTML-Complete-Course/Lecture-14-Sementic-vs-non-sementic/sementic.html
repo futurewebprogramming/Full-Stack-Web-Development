@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sementic VS Non Sementic Elements - Lecture 13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+        }
+
+        header ul {
+            display: flex;
+
+        }
+
+        header ul li {
+            list-style-type: none;
+            margin: 20px;
+        }
+
+        aside {
+            padding: 20px;
+            float: left;
+            width: 20%;
+            background-color: blueviolet;
+            color: white
+        }
+
+        aside ul li {
+            list-style: none;
+            padding: 20px;
+        }
+
+        main {
+            padding: 20px;
+            background-color: antiquewhite;
+            width: 80%;
+            float: right;
+        }
+
+        main article {
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            clear: both;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <h1>Sementic vs Non Sementic Elements</h1> -->
+    <!-- nav bar -->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- side bar -->
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- main content -->
+    <main>
+        <section>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+            <article>
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, commodi.</p>
+            </article>
+        </section>
+    </main>
+    <!-- footer goes here -->
+    <footer>
+        <p>I am a footer</p>
+    </footer>
+</body>
+
+</html>
