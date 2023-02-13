@@ -126,7 +126,7 @@ Newspaper articles
 HTML <footer> Element
 The <footer> element defines a footer for a document or section.
 ```
-### <footer> element 
+### `<footer>` element 
 ```html
 authorship information
 copyright information
