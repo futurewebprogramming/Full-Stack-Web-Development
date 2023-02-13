@@ -5,20 +5,48 @@
 [![Source DEV.to](https://res.cloudinary.com/practicaldev/image/fetch/s--7rtr6qdB--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n8f7yj3bjy7rcu03hfsa.png "Non Sementic HTML vs Sementic HTML pic by Dev.to himanshu gupta")](https://dev.to/himanshudevgupta/html-semantic-tag-vs-non-semantic-2fj3#:~:text=Non-semantic%20HTML%20refers%20to%20the%20use%20of%20HTML,about%20the%20meaning%20or%20purpose%20of%20that%20content.)
 
 
-Semantic elements = elements with a meaning.
+Semantic elements and non-semantic elements are terms used to describe different types of HTML elements in a web page.
 
-What are Semantic Elements?
-A semantic element clearly describes its meaning to both the browser and the developer.
 
-Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Semantic elements
+>elements with a meaning.
 
-Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+Semantic elements are HTML elements that have a `specific meaning` and purpose. They describe the content they contain, making it `easier` for `browsers`, `search engines`, and assistive technologies to _**understand the structure and purpose**_ of a web page. Examples of semantic elements include:
 
-Semantic Elements in HTML
+```html
+<header> - defines the header of a document or section
+<nav> - defines a section for navigation links
+<main> - defines the main content of a document
+<article> - defines a self-contained article
+<section> - defines a standalone section of a document
+<aside> - defines content aside from the main content
+<footer> - defines the footer of a document or section
+
+```
+
+### Non Sementic Elements
+>Tells nothing about its content.
+
+Non-semantic elements, on the other hand, do not have a specific meaning or purpose. They are used for styling and layout purposes only and do not convey any information about the content they contain. Examples of non-semantic elements include:
+```html
+<div> - a generic container for flow content
+<span> - a generic inline container for flow content
+<hr> - defines a horizontal rule for visual separation of content
+```
+### Why Semantic Elements?
+
+In general, it is `recommended` to `use semantic elements` _**whenever possible**_ to provide meaningful information about the content and structure of a web page. Non-semantic elements should be used only when there is no semantic element that fits the purpose.
+
+#### Examples of semantic elements: 
+`<form>`, `<table>`, and `<article>` - Clearly defines its content.
+
+
+### Non Semantic Elements in HTML
 Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
 
 In HTML there are some semantic elements that can be used to define different parts of a web page:  
 
+```html
 <article>
 <aside>
 <details>
@@ -32,90 +60,40 @@ In HTML there are some semantic elements that can be used to define different pa
 <section>
 <summary>
 <time>
-HTML Semantic Elements
-HTML <section> Element
-The <section> element defines a section in a document.
+```
 
-According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+### HTML Section Element
+`<section>` element defines a section in a document page.
 
-Examples of where a <section> element can be used:
+>Examples of where a `<section>` element can be used:
 
-Chapters
-Introduction
-News items
+```html
+Chapters,
+Introduction,
+News items,
 Contact information
-A web page could normally be split into sections for introduction, content, and contact information.
+```
 
-Example
-Two sections in a document:
+>A web page could normally be split into sections for introduction, content, and contact information.
 
-<section>
-<h1>WWF</h1>
-<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-</section>
 
-<section>
-<h1>WWF's Panda symbol</h1>
-<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
-</section>
-HTML <article> Element
-The <article> element specifies independent, self-contained content.
+### `<article>` Element
 
-An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+`<article>` element specifies independent, self-contained content.
 
-Examples of where the <article> element can be used:
+>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
 
+Examples of where the `<article>` element can be used:
+
+```html
 Forum posts
 Blog posts
 User comments
 Product cards
 Newspaper articles
-Example
-Three articles with independent, self-contained content:
+```
 
-<article>
-<h2>Google Chrome</h2>
-<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
-</article>
-
-<article>
-<h2>Mozilla Firefox</h2>
-<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-</article>
-
-<article>
-<h2>Microsoft Edge</h2>
-<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-</article>
-Example 2
-Use CSS to style the <article> element:
-
-<html>
-<head>
-<style>
-.all-browsers {
-  margin: 0;
-  padding: 5px;
-  background-color: lightgray;
-}
-
-.all-browsers > h1, .browser {
-  margin: 10px;
-  padding: 5px;
-}
-
-.browser {
-  background: white;
-}
-
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
-}
-</style>
-</head>
-<body>
-
+```html
 <article class="all-browsers">
   <h1>Most Popular Browsers</h1>
   <article class="browser">
@@ -131,31 +109,12 @@ Use CSS to style the <article> element:
     <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
   </article>
 </article>
+```
 
-</body>
-</html>
-Nesting <article> in <section> or Vice Versa?
-The <article> element specifies independent, self-contained content.
+### `<header>` Element
+`<header>` element represents a container for introductory content or a set of navigational links.
 
-The <section> element defines section in a document.
-
-Can we use the definitions to decide how to nest those elements? No, we cannot!
-
-So, you will find HTML pages with <section> elements containing <article> elements, and <article> elements containing <section> elements.
-
-HTML <header> Element
-The <header> element represents a container for introductory content or a set of navigational links.
-
-A <header> element typically contains:
-
-one or more heading elements (<h1> - <h6>)
-logo or icon
-authorship information
-Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.
-
-Example
-A header for an <article>: 
-
+```html
 <article>
   <header>
     <h1>What Does WWF Do?</h1>
@@ -166,57 +125,37 @@ A header for an <article>:
 </article>
 HTML <footer> Element
 The <footer> element defines a footer for a document or section.
-
-A <footer> element typically contains:
-
+```
+### <footer> element 
+```html
 authorship information
 copyright information
 contact information
 sitemap
 back to top links
 related documents
-You can have several <footer> elements in one document.
-
-Example
-A footer section in a document:
-
+```
+```html
 <footer>
   <p>Author: Hege Refsnes</p>
   <p><a href="mailto:hege@example.com">hege@example.com</a></p>
 </footer>
-HTML <nav> Element
-The <nav> element defines a set of navigation links.
+```
+### HTML `<nav>` Element
+`<nav>` element defines a set of navigation links.
 
-Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
-
-Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
-
-Example
-A set of navigation links:
-
+```html
 <nav>
   <a href="/html/">HTML</a> |
   <a href="/css/">CSS</a> |
   <a href="/js/">JavaScript</a> |
   <a href="/jquery/">jQuery</a>
 </nav>
-HTML <aside> Element
-The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+```
+### `<aside>` Element
+`<aside>` element defines some content aside from the content it is placed in (like a sidebar).
 
-The <aside> content should be indirectly related to the surrounding content.
-
-Example
-Display some content aside from the content it is placed in:
-
-<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
-
-<aside>
-<h4>Epcot Center</h4>
-<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</aside>
-Example 2
-Use CSS to style the <aside> element:
-
+```html
 <html>
 <head>
 <style>
@@ -243,20 +182,18 @@ aside {
 
 </body>
 </html>
-HTML <figure> and <figcaption> Elements
-The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+```
+### `<figure>` and `<figcaption>` Elements
 
-The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+`<figure>` tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
 
-The <img> element defines the actual image/illustration. 
+`<figcaption>` tag defines a caption for a `<figure>` element. 
 
-Example
+`<img>` element defines the actual image/illustration. 
+
+```html
 <figure>
   <img src="pic_trulli.jpg" alt="Trulli">
   <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
 </figure>
-Why Semantic Elements?
-According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."
-
-Semantic Elements in HTML
-Below is a list of some of the semantic elements in HTML.
+```
