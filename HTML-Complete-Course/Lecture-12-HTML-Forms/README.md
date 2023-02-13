@@ -134,17 +134,7 @@ is used for input fields that should contain a color a color picker can show up 
   <input type="color" id="favcolor" name="favcolor">
 </form>
 ```
-#### Input Type Week
-`<input type="week">` allows the user to select a week and year.
 
-date picker can show up in the input field.
-
-```html
-<form>
-  <label for="week">Select a week:</label>
-  <input type="week" id="week" name="week">
-</form>
-```
 #### Input Type Time
 `<input type="time">` allows the user to select a time (no time zone).
 time picker can show up in the input field.
@@ -161,7 +151,7 @@ we can also use the min and max attributes to add restrictions to dates
 ``` html
 <form>
   <label for="datemax">Enter a date before 1980-01-01:</label>
-
+S
    <input type="date" name="" id="" min="2-13-2023">
 
    <input type="date" name="" id="" max="1200-12-31">
@@ -176,6 +166,18 @@ we can also use the min and max attributes to add restrictions to dates
 <form>
   <label for="birthdaytime">Birthday (date and time):</label>
   <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+```
+
+#### Input Type Week
+`<input type="week">` allows the user to select a week and year.
+
+date picker can show up in the input field.
+
+```html
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
 </form>
 ```
 
