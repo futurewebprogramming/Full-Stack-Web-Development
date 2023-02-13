@@ -83,17 +83,6 @@ to get password from user ,
 </form>
 ```
 
-<p>Choose your favorite language:</p>
-
-<form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form>
-
 ### Checkboxes
 `<input type="checkbox">` with Checkboxes user can _*select*_ _***One or more***_ options of a limited number of choices.
 
@@ -107,14 +96,6 @@ to get password from user ,
   <label for="vehicle3"> I have a boat</label>
 </form>
 ```
-<form>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label>
-</form>
 
 ### Submit Button
 
@@ -566,16 +547,7 @@ Use the multiple attribute to allow the user to select more than one value
   </fieldset>
 </form>
 ```
-<form>
-  <fieldset>
-    <legend>Personalia:</legend>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
-</form>
+
 
 ### <datalist> Element
 
@@ -596,7 +568,6 @@ list attribute of the `<input> `element, must refer to the id attribute of the `
   </datalist>
 </form>
 ```
-
 
 ### Form Attributes
 
