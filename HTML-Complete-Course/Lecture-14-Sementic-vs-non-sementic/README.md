@@ -14,7 +14,7 @@ Semantic elements
 Semantic elements are HTML elements that have a `specific meaning` and purpose. They describe the content they contain, making it `easier` for `browsers`, `search engines`, and assistive technologies to _**understand the structure and purpose**_ of a web page. Examples of semantic elements include:
 
 ```html
-<header> - defines the header of a document or section
+<header> - defines the header of a document or section (element represents a container for introductory content or a set of navigational links)
 <nav> - defines a section for navigation links
 <main> - defines the main content of a document
 <article> - defines a self-contained article
@@ -37,30 +37,6 @@ Non-semantic elements, on the other hand, do not have a specific meaning or purp
 
 In general, it is `recommended` to `use semantic elements` _**whenever possible**_ to provide meaningful information about the content and structure of a web page. Non-semantic elements should be used only when there is no semantic element that fits the purpose.
 
-#### Examples of semantic elements: 
-`<form>`, `<table>`, and `<article>` - Clearly defines its content.
-
-
-### Non Semantic Elements in HTML
-Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
-
-In HTML there are some semantic elements that can be used to define different parts of a web page:  
-
-```html
-<article>
-<aside>
-<details>
-<figcaption>
-<figure>
-<footer>
-<header>
-<main>
-<mark>
-<nav>
-<section>
-<summary>
-<time>
-```
 
 ### HTML Section Element
 `<section>` element defines a section in a document page.
