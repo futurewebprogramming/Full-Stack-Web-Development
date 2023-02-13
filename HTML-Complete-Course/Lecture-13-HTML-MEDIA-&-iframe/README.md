@@ -39,7 +39,6 @@ By default, an iframe has a border around it. to remove border, add `border: non
 <iframe src="https://bing.com/" title="bing.com" width="100%" height="100%" style="border:none"></iframe>
 ```
 
-
 ## Multimedia
 
 Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.
@@ -48,10 +47,10 @@ Multimedia comes in many different formats. It can be almost anything you can he
 
 Multimedia files have formats and different extensions like: .wav, .mp3, .mp4, .mpg, .wmv, and .avi.
 
-HTML <video> Element
->show a video in HTML, use the <video> element:
+HTML `<video>` Element
+>show a video in HTML, use the `<video>` element:
 
-HTML <video> element is used to show a video on a web page.
+HTML `<video>` element is used to show a video on a web page.
 
 ```html
 <video width="320" height="240" controls>
@@ -60,12 +59,11 @@ HTML <video> element is used to show a video on a web page.
 </video>    
 ```
 
-
 ### `<source>` element 
 allows you to specify alternative video files which the browser may choose from.
 
 
-### HTML `<video>` Autoplay
+###  Autoplay
 To start a video automatically, use the autoplay attribute:
 
 ```html
@@ -83,8 +81,6 @@ after autoplay to let your video start playing automatically
   <source src="movie.ogg" type="video/ogg">
 </video>
 ```
-
-
 ### HTML Audio
 
 HTML `<audio>` element is used to play an audio file on a web page.
@@ -97,19 +93,7 @@ HTML `<audio>` element is used to play an audio file on a web page.
   <source src="horse.mp3" type="audio/mpeg">
 </audio>
 ```
-### `<source>` element
- allows you to specify alternative audio files which the browser may choose from. 
 
-
-### `<audio>` Autoplay
-To start an audio file automatically, use the autoplay attribute:
-
-```html
-<audio controls autoplay muted>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-</audio>
-```
 
 ### HTML YouTube Videos
 
@@ -142,27 +126,12 @@ we will add like we add single video difference is we have to add  `loop` with `
 ##### loop=1 
 to let your video loop forever.  
 
-##### Value 0
+##### Value=0
  video will play only once.
 
 
 ```html
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-</iframe>
-```
-### YouTube Controls
-
-#### controls=0
-controls=0
->to not display controls in the video player.
-
-#### controls=1
-
->Player controls display.
-
-```html
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
 </iframe>
 ```
