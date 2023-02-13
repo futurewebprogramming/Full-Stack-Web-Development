@@ -135,7 +135,7 @@ is used for input fields that should contain a color a color picker can show up 
 </form>
 ```
 
-#### Input Type Time
+### Input Type Time
 `<input type="time">` allows the user to select a time (no time zone).
 time picker can show up in the input field.
 
@@ -158,7 +158,7 @@ S
   
 </form>
 ```
-#### Input Type Datetime-local
+### Input Type Datetime-local
 `<input type="datetime-local">` specifies a date and time input field, with no time zone.
  date picker can show up in the input field.
 
@@ -169,7 +169,7 @@ S
 </form>
 ```
 
-#### Input Type Week
+### Input Type Week
 `<input type="week">` allows the user to select a week and year.
 
 date picker can show up in the input field.
@@ -194,7 +194,7 @@ a date picker can show up in the input field.
 ```
 
 
-#### Input Type Email
+### Input Type Email
 `<input type="email"> `is used for input fields that should contain an e-mail address.
 e-mail address can be automatically validated when submitted.
 
@@ -204,7 +204,7 @@ e-mail address can be automatically validated when submitted.
   <input type="email" id="email" name="email">
 </form>
 ```
-#### Input Type Image
+### Input Type Image
 `<input type="image">` defines an image as a submit button.
 
 ```html
@@ -222,7 +222,7 @@ e-mail address can be automatically validated when submitted.
   <input type="file" id="myfile" name="myfile">
 </form>
 ```
-#### Input Type Hidden
+### Input Type Hidden
 `<input type="hidden">` defines a hidden input field (not visible to a user).
 hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
 ```html
@@ -234,7 +234,7 @@ hidden field lets web developers include data that cannot be seen or modified by
 </form>
 ```
 
-#### Input Type Number
+### Input Type Number
 `<input type="number">` defines a numeric input field.
 
 we can also set restrictions on what numbers are accepted.
@@ -247,7 +247,7 @@ we can also set restrictions on what numbers are accepted.
 </form>
 ```
 
-#### Input Type Range
+### Input Type Range
 `<input type="range">` defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, we can set restrictions on what numbers are accepted with the min, max, and step attributes
 
 ```html
@@ -256,7 +256,7 @@ we can also set restrictions on what numbers are accepted.
   <input type="range" id="vol" name="vol" min="0" max="50">
 </form>
 ```
-#### Input Type Search
+### Input Type Search
 `<input type="search">` is used for search fields (a search field behaves like a regular text field).
 
 ```html
@@ -266,7 +266,7 @@ we can also set restrictions on what numbers are accepted.
 </form>
 ```
 
-#### Input Type Tel
+### Input Type Tel
 `<input type="tel"> `is used for input fields that should contain a telephone number.
 
 ```html
