@@ -129,10 +129,11 @@ we can add it at the end of video url with `?` mark
 `autoplay=1`
 `mute=1 `
 
+```html
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
 </iframe>
-
+```
 ### YouTube Playlist
 
 we will add like we add single video difference is we have to add  `loop` with `1` 0r `0` with & Symbol at the end of video url. 
