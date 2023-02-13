@@ -28,6 +28,7 @@ HTML form is used to collect user input. user input is most often sent to a serv
 
 `<input>` element can be displayed in many ways, depending on the type attribute.
 
+Types of Input we will Learn later in this chappter
 
 Type    | Description
 ------- | -----------
@@ -37,14 +38,24 @@ Type    | Description
 `<input type="submit">`	| Displays submit button (for submitting form)
 `<input type="button">` |	Displays clickable button
 
-#### Text Fields
+
+### `<textarea>` Element
+
+`<textarea>` element defines a multi-line input field more space to take user input for text:
 
 ```html
-<label for="fname">First name:</label>
-<input type="text" id="fname" name="fname">
+<textarea name="message" rows="10" cols="30">
 ```
-<label for="fname">First name:</label>
-<input type="text" id="fname" name="fname">
+`rows `attribute specifies the visible number of lines in a text area.
+
+`cols` attribute specifies the visible width of a text area.
+
+### `<button>` Element
+`<button>` element defines a button:
+
+```html
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+```
 
 ### `<label>` Element
 
@@ -53,6 +64,89 @@ Type    | Description
 `<label>` element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when user clicks text within the `<label> `element, it toggles the radio button/checkbox.
 
 ` <label> `tag should be equal to the `id` attribute of the `<input>` element to _**bind them**_ together.
+
+### `<select>` Element
+`<select>` element defines a drop-down list
+
+```html
+<label for="select"> Select Your Favourite Lang </label>
+        <select name="" id="select">
+            <option value="html">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="JavaScript">Python</option>
+        </select>
+```
+#### Visible Values:
+>Use the size attribute to specify the number of visible values:
+
+#### Option element 
+`<option>` elements defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+```html
+<option value="fiat" selected>Fiat</option>
+```
+#### Multiple Selections:
+Use the multiple attribute to allow the user to select more than one value
+
+```html
+
+<select name="" id="select" multiple>
+            <option value="html">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="JavaScript">Python</option>
+</select>
+```
+### `<fieldset>` and `<legend> `Elements
+
+`<fieldset>` element is used to group related data in a form.
+
+`<legend>` element defines a caption for the `<fieldset> `element.
+
+```html
+<form >
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+```
+
+### `<datalist>` Element
+
+`<datalist>` element specifies a list of pre-defined options for an `<input>` element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+list attribute of the `<input> `element, must refer to the id attribute of the `<datalist>` element.
+
+```html
+<form >
+  <input list="lang">
+  <datalist id="lang">
+   <option value="html">
+   <option value="CSS">
+   <option value="JavaScript">
+   <option value="JavaScript">
+  </datalist>
+</form>
+```
+
+## Input Types:
+#### Input Text Type
+
+```html
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+```
 
 #### Input Type Password
 to get password from user , 
@@ -67,7 +161,7 @@ to get password from user ,
 </form>
 ```
 
-### Radio Buttons
+### Type Radio Buttons
 `<input type="radio">` with Radio buttons user can select ONE option from given options.
 
 ```html
@@ -83,7 +177,7 @@ to get password from user ,
 </form>
 ```
 
-### Checkboxes
+### Input type Checkboxes
 `<input type="checkbox">` with Checkboxes user can _*select*_ _***One or more***_ options of a limited number of choices.
 
 ```html
@@ -97,7 +191,7 @@ to get password from user ,
 </form>
 ```
 
-### Submit Button
+### type Submit Button
 
 `<input type="submit">` defines button for submitting the form data to a form-handler.
 
@@ -299,6 +393,20 @@ input value attribute specifies an initial value for an input field
   <input type="text" id="lname" name="lname" value="Doe">
 </form>
 ```
+
+### Name Attribute for `<input>`
+
+Notice that each input field must have a name attribute to be submitted.
+
+If the name attribute is omitted, the value of the input field will not be sent at all.
+```html
+<form >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
 ### Readonly Attribute
 input readonly attribute specifies that an input field is read-only.
 
@@ -465,111 +573,7 @@ Autocomplete allows the browser to predict the value. When a user starts to type
   <input type="submit" value="Submit">
 </form>
 ```
-### Name Attribute for `<input>`
 
-Notice that each input field must have a name attribute to be submitted.
-
-If the name attribute is omitted, the value of the input field will not be sent at all.
-```html
-<form >
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" value="John"><br><br>
-  <input type="submit" value="Submit">
-</form>
-```
-### `<select>` Element
-`<select>` element defines a drop-down list
-
-```html
-<label for="select"> Select Your Favourite Lang </label>
-        <select name="" id="select">
-            <option value="html">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="JavaScript">Python</option>
-        </select>
-```
-#### Visible Values:
->Use the size attribute to specify the number of visible values:
-
-#### Option element 
-`<option>` elements defines an option that can be selected.
-
-By default, the first item in the drop-down list is selected.
-
-To define a pre-selected option, add the selected attribute to the option:
-```html
-<option value="fiat" selected>Fiat</option>
-```
-#### Multiple Selections:
-Use the multiple attribute to allow the user to select more than one value
-
-```html
-
-<select name="" id="select" multiple>
-            <option value="html">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="JavaScript">Python</option>
-</select>
-```
-### `<textarea>` Element
-
-`<textarea>` element defines a multi-line input field more space to take user input for text:
-
-```html
-<textarea name="message" rows="10" cols="30">
-```
-`rows `attribute specifies the visible number of lines in a text area.
-
-`cols` attribute specifies the visible width of a text area.
-
-### `<button>` Element
-`<button>` element defines a button:
-
-```html
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-```
-
-### `<fieldset>` and `<legend> `Elements
-
-`<fieldset>` element is used to group related data in a form.
-
-`<legend>` element defines a caption for the `<fieldset> `element.
-
-```html
-<form >
-  <fieldset>
-    <legend>Personalia:</legend>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
-</form>
-```
-
-
-### <datalist> Element
-
-`<datalist>` element specifies a list of pre-defined options for an `<input>` element.
-
-Users will see a drop-down list of the pre-defined options as they input data.
-
-list attribute of the `<input> `element, must refer to the id attribute of the `<datalist>` element.
-
-```html
-<form >
-  <input list="lang">
-  <datalist id="lang">
-   <option value="html">
-   <option value="CSS">
-   <option value="JavaScript">
-   <option value="JavaScript">
-  </datalist>
-</form>
-```
 
 ### Form Attributes
 
