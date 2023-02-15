@@ -1,4 +1,5 @@
-Selectors, Syntax, & Comments.
+## Lecture -02
+CSS Syntax, Selectors & Comments.
 ### CSS Syntax
 
 ![CSS Example](https://www.w3schools.com/css/img_selector.gif "Good Example of CSS Syntax by W3 School")
