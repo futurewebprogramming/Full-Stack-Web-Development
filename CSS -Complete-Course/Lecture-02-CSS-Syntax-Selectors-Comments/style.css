@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+}
+
+
+#main-heading{
+    background-color: blue;
+    text-align: center;
+}
+p.para{
+    background-color: red;
+    color: white;
+}
+.para-second{
+    font-size: 40px;
+}
+/* grouping elements ki madads sy select key they elements */
+
+p,h2,div{
+    background-color: yellow;
+}
+
