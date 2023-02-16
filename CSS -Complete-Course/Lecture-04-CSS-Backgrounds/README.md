@@ -1,6 +1,6 @@
 # Lecture 04
 
-## CSS Backgrounds
+## CSS Backgrounds (Background-Color, Background Image, and it's properties)
 
 CSS background properties are used to add background effects for elements
 
