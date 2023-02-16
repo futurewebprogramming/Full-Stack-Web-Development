@@ -124,10 +124,12 @@ background: #ffffff url("img_tree.png") no-repeat right top;
 
 Shorthand property the order of the property values is:
 
+```css
 background-color
 background-image
 background-repeat
 background-attachment
 background-position
 
+```
 >It does not matter if one of the property values is missing as in above example we skipped background-attachment
