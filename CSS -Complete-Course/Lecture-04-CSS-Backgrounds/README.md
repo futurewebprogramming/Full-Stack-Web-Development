@@ -1,4 +1,4 @@
-# Lecture 03
+# Lecture 04
 
 ## CSS Backgrounds
 
@@ -21,7 +21,7 @@ div {
   opacity: 0.3;
 }
 ```
-Note:
+!Important:
 When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. 
 
 Transparency using RGBA
