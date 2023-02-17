@@ -44,6 +44,18 @@ body {
 background-image: url("paper.gif");
 }
 ```
+### background-size
+
+#### Property Values:
+
+##### auto
+Default value. The background image is displayed in its original size	
+
+##### contain
+Resize the background image to make sure the image is fully visible	
+
+##### cover
+Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges	
 
 ### Background-repeat
 By default, the background-image property repeats an image both horizontally and vertically.
