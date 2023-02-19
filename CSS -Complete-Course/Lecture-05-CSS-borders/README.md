@@ -1,7 +1,8 @@
 # Lecture 5
 
-## Borders
-CSS border properties allow you to specify the style, width, and color of an element's border.
+#### Borders - border-width - border-style - indvidual sides border - Shorthand Border
+
+CSS border properties allow you to specify border style, width, and color of an element's border.
 
 I have borders on all sides.
 ```css
