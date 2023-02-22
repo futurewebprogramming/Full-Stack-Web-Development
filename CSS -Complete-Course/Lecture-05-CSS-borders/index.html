@@ -7,14 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border CSS</title>
     <style>
-        p {
-            border: 4px double;
+        p{
+            padding: 10px;
+            border: 12px solid crimson;
+            border-radius: 4px;
+
+        }
+        nav ul li {
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: red;
+        }
+        nav ul li a:hover{
+            border-top: 4px solid crimson;
         }
     </style>
 </head>
 
 <body>
-    <p>Lorem, ipsum.</p>
+  <p>Lorem, ipsum.</p>
+  <nav>
+    <ul><li><a href="#">Home</a></li></ul>
+  </nav>
 </body>
 
 </html>

@@ -1,108 +1,125 @@
-## margin
-CSS Margins
-Margins are used to create space around elements, outside of any defined borders.
+# Lecture -06
 
-This element has a margin of 70px.
-CSS Margins
-The CSS margin properties are used to create space around elements, outside of any defined borders.
+## CSS Margin & Padding
 
-With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+Margins are used to create _space_ around _elements_, outside of any defined borders.
 
-Margin - Individual Sides
+```css
+p{
+  margin: 20px; /*margin short hand property*/
+}
+```
+
+
+### Margin - Individual Sides
 CSS has properties for specifying the margin for each side of an element:
 
-margin-top
-margin-right
-margin-bottom
-margin-left
-All the margin properties can have the following values:
+#### margin-top
 
-auto - the browser calculates the margin
-length - specifies a margin in px, pt, cm, etc.
-% - specifies a margin in % of the width of the containing element
-inherit - specifies that the margin should be inherited from the parent element
-Tip: Negative values are allowed.
+```css
+  p{margin-top: 10px;}
+```
+#### margin-right
 
-Example
-Set different margins for all four sides of a <p> element:
+```css
+  p{margin-right: 10px;}
+```
+#### margin-bottom
 
+```css
+  p{margin-bottom: 10px;}
+```
+#### margin-left
+
+```css
+  p{margin-left: 10px;}
+```
+>All the margin properties can have the following values:
+
+`auto` - the browser calculates the margin
+`length` - specifies a margin in px, pt, cm, etc.
+`%` - specifies a margin in % of the width of the containing element
+`inherit` - specifies that the margin should be inherited from the parent element
+
+```css
 p {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
 }
-Margin - Shorthand Property
-To shorten the code, it is possible to specify all the margin properties in one property.
+```
+## Margin - Shorthand Property
 
-The margin property is a shorthand property for the following individual margin properties:
+```css
+p{
+  margin: 20px; /*margin short hand property*/
+}
+```
 
-margin-top
-margin-right
-margin-bottom
-margin-left
-So, here is how it works:
+
 
 If the margin property has four values:
-
-margin: 25px 50px 75px 100px;
+```css
+p{margin: 25px 50px 75px 100px};
+```
+in this case,
+```css
 top margin is 25px
 right margin is 50px
 bottom margin is 75px
 left margin is 100px
-Example
-Use the margin shorthand property with four values:
+```
 
-p {
-  margin: 25px 50px 75px 100px;
-}
+
 If the margin property has three values:
+```css
+p {
+  margin: 25px 50px 75px;
+}
 
 margin: 25px 50px 75px;
 top margin is 25px
 right and left margins are 50px
 bottom margin is 75px
-Example
-Use the margin shorthand property with three values: 
+```
 
-p {
-  margin: 25px 50px 75px;
-}
 If the margin property has two values:
 
 margin: 25px 50px;
 top and bottom margins are 25px
 right and left margins are 50px
-Example
-Use the margin shorthand property with two values: 
 
+```css
 p {
   margin: 25px 50px;
 }
+```
 If the margin property has one value:
 
 margin: 25px;
-all four margins are 25px
-Example
-Use the margin shorthand property with one value: 
-
+all four magrins are 25px
+```css
 p {
   margin: 25px;
 }
-The auto Value
-You can set the margin property to auto to horizontally center the element within its container.
+```
+### auto Value
+we can set the margin property to auto to `horizontally center` the `element` within `its` `container`.
 
-The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+`element` will then `take` up the `specified` `width`, and the `remaining` `space` will be `split` `equally` between the `left` and `right` `margins`.
 
-Example
+
 Use margin: auto:
-
+```css
 div {
   width: 300px;
   margin: auto;
   border: 1px solid red;
 }
-The inherit Value
+```
+
+### inherit Value
 This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>):
 
 Example
