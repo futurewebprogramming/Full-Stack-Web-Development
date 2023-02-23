@@ -2,7 +2,7 @@
 
 ## CSS Margin & Padding
 
-Margins are used to create _space_ around _elements_, outside of any defined borders.
+Margins are used to create _space_ around _elements_, `outside` of any defined `borders`.
 
 ```css
 p{
@@ -10,9 +10,23 @@ p{
 }
 ```
 
-
 ### Margin - Individual Sides
 CSS has properties for specifying the margin for each side of an element:
+
+All the margin properties can have the following values:
+
+### auto - 
+browser calculates the margin
+### length - 
+specifies a margin in px, pt, cm, etc.
+### % - 
+specifies a margin in % of the width of the containing element
+
+### inherit - 
+specifies that the margin should be inherited from the parent element
+
+#### Note: 
+>Negative values are allowed.
 
 #### margin-top
 
@@ -34,12 +48,7 @@ CSS has properties for specifying the margin for each side of an element:
 ```css
   p{margin-left: 10px;}
 ```
->All the margin properties can have the following values:
 
-`auto` - the browser calculates the margin
-`length` - specifies a margin in px, pt, cm, etc.
-`%` - specifies a margin in % of the width of the containing element
-`inherit` - specifies that the margin should be inherited from the parent element
 
 ```css
 p {
@@ -49,6 +58,7 @@ p {
   margin-left: 80px;
 }
 ```
+
 ## Margin - Shorthand Property
 
 ```css
@@ -56,8 +66,6 @@ p{
   margin: 20px; /*margin short hand property*/
 }
 ```
-
-
 
 If the margin property has four values:
 ```css
@@ -70,7 +78,6 @@ right margin is 50px
 bottom margin is 75px
 left margin is 100px
 ```
-
 
 If the margin property has three values:
 ```css
@@ -109,7 +116,6 @@ we can set the margin property to auto to `horizontally center` the `element` wi
 
 `element` will then `take` up the `specified` `width`, and the `remaining` `space` will be `split` `equally` between the `left` and `right` `margins`.
 
-
 Use margin: auto:
 ```css
 div {
@@ -118,237 +124,227 @@ div {
   border: 1px solid red;
 }
 ```
-
 ### inherit Value
 This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>):
 
-Example
-Use of the inherit value:
-
+```css
 div {
   border: 1px solid red;
   margin-left: 100px;
 }
+```
 
-p.ex1 {
-  margin-left: inherit;
-}
-
-
-
-CSS Margin Collapse
+### CSS Margin Collapse
 Sometimes two margins collapse into a single margin.
-
-Margin Collapse
-Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
-
-This does not happen on left and right margins! Only top and bottom margins!
-
-Look at the following example:
-
-Example
-Demonstration of margin collapse:
-
+```css
 h1 {
-  margin: 0 0 50px 0;
+  margin-bottom: 50px;
 }
 
 h2 {
-  margin: 20px 0 0 0;
+  margin-top: 20px;
 }
-In the example above, the <h1> element has a bottom margin of 50px and the <h2> element has a top margin set to 20px.
+```
+In this example the `<h1> `element has a `bottom margin of 50px` and the `<h2> `element has a `top margin` set to `20px`.
 
-Common sense would seem to suggest that the vertical margin between the <h1> and the <h2> would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+so the `vertical margin` between the `<h1>` and the `<h2>` would be a `total of 70px` (`50px + 20px`).
 
+But `due` to `margin collapse`, the actual margin ends up being `50px`.
 
+## CSS Padding
 
+`Padding` is used to create `space` `around` an `element`'s `content`, `inside` of any defined `borders`.
 
-## padding
+setting the padding for each side of an element (top, right, bottom, and left).
 
-
-CSS Padding
-Padding is used to create space around an element's content, inside of any defined borders.
-
-This element has a padding of 70px.
-
-CSS Padding
-The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
-
-With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
-
-Padding - Individual Sides
+### Padding - Individual Sides
 CSS has properties for specifying the padding for each side of an element:
 
+All the padding properties can have following values:
+
+### length - 
+specifies a padding in px, pt, cm, etc.
+
+### % - 
+
+specifies a padding in % of the width of the containing element
+
+### inherit -
+specifies that the padding should be inherited from the parent element
+
+### Note: 
+>Negative values are not allowed.
+
+```css
 padding-top
 padding-right
 padding-bottom
 padding-left
-All the padding properties can have the following values:
-
-length - specifies a padding in px, pt, cm, etc.
-% - specifies a padding in % of the width of the containing element
-inherit - specifies that the padding should be inherited from the parent element
-Note: Negative values are not allowed.
-
-Example
-Set different padding for all four sides of a <div> element:  
-
+```
+Individual Pading Exmaple .
+```css
 div {
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
 }
-Padding - Shorthand Property
-To shorten the code, it is possible to specify all the padding properties in one property.
+```
+### Padding - Shorthand Property
+to specify all the padding properties in one property.
 
-The padding property is a shorthand property for the following individual padding properties:
-
-padding-top
-padding-right
-padding-bottom
-padding-left
-So, here is how it works:
-
-If the padding property has four values:
-
+##### If the padding property has four values:
+```css
+  div{
 padding: 25px 50px 75px 100px;
+}
+```
 top padding is 25px
 right padding is 50px
 bottom padding is 75px
 left padding is 100px
-Example
-Use the padding shorthand property with four values:
 
+##### If the padding property has three values:
+
+```css
 div {
-  padding: 25px 50px 75px 100px;
+  padding: 25px 50px 75px;
 }
-If the padding property has three values:
-
+```
 padding: 25px 50px 75px;
 top padding is 25px
 right and left paddings are 50px
 bottom padding is 75px
-Example
-Use the padding shorthand property with three values: 
 
-div {
-  padding: 25px 50px 75px;
-}
-If the padding property has two values:
+#### If the padding property has two values:
 
-padding: 25px 50px;
-top and bottom paddings are 25px
-right and left paddings are 50px
-Example
-Use the padding shorthand property with two values: 
-
+```css
 div {
   padding: 25px 50px;
 }
-If the padding property has one value:
+```
 
-padding: 25px;
-all four paddings are 25px
-Example
-Use the padding shorthand property with one value: 
+top and bottom paddings are 25px
+right and left paddings are 50px
 
+##### If the padding property has one value:
+
+```css
 div {
   padding: 25px;
 }
-Padding and Element Width
-The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).
+```
 
-So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.
+all four paddings are 25px
 
-Example
-Here, the <div> element is given a width of 300px. However, the actual width of the <div> element will be 350px (300px + 25px of left padding + 25px of right padding):
+## Padding and Element Width
 
+CSS `width property` `specifies` the `width` of the `element's ``content` area. 
+
+`content area` is the `portion` `inside` the `padding`, `border`, and `margin` of an `element`.
+
+So, if element has a `specified` `width`, the `padding added` `to` that `element` `will be added` `to`  `total width` of the `element`. 
+
+```css
 div {
   width: 300px;
   padding: 25px;
 }
-To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
+```
 
-Example
-Use the box-sizing property to keep the width at 300px, no matter the amount of padding:
+Here, the `<div> `element is given a `width` of `300px`. However, `actual` `width` of the `<div>` `element` will be `350px` (300px + 25px of left padding + 25px of right padding):
 
+
+`To keep` the `width` at `300px`, `no matter` the `amount of padding`, we  can `use` the `box-sizing` property. 
+
+with this element will `maintain` its `actual width`; if we `increase`  `padding`, `available content` `space` will `decrease`.
+
+```css
 div {
   width: 300px;
   padding: 25px;
   box-sizing: border-box;
 }
+```
 
+## Height and Width
 
-
-
-## height and Width
-
+### CSS Setting height and width
 
 CSS Height, Width and Max-width
-The CSS height and width properties are used to set the height and width of an element.
+` CSS height` and `width` properties are used to `set the height` and `width` `of` an `element`.
 
-The CSS max-width property is used to set the maximum width of an element.
+CSS `max-width` property is used to `set` the `maximum width` `of` an `element`.
 
-This element has a height of 50 pixels and a width of 100%.
+height and width properties do not include padding, borders, or margins. 
 
-CSS Setting height and width
-The height and width properties are used to set the height and width of an element.
+It sets the height/width of the area inside the padding, border, and margin of the element.
 
-The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+### CSS height and width Values
 
-CSS height and width Values
-The height and width properties may have the following values:
+height and width properties may have the following values:
 
-auto - This is default. The browser calculates the height and width
-length - Defines the height/width in px, cm, etc.
-% - Defines the height/width in percent of the containing block
-initial - Sets the height/width to its default value
-inherit - The height/width will be inherited from its parent value
-CSS height and width Examples
-This element has a height of 200 pixels and a width of 50%
-Example
-Set the height and width of a <div> element:
+#### auto - 
+This is default. browser calculates the height and width
 
+#### length - 
+Defines the height/width in px, cm, etc.
+
+#### % - 
+Defines the height/width in percent of the containing block
+
+#### initial - 
+Sets the height/width to its default value
+
+#### inherit - 
+height/width will be inherited from its parent value
+
+```css
+div {
+  height: 200px;
+  width: 500px;
+  background-color: powderblue;
+}
+```
+`problem` with  `<div>` above `occurs` when `browser window` is `smaller` than the `width` of `element` (500px). `browser` then `adds` a `horizontal scrollbar` to the `page`.
+
+`instead` of `using` just `width` `use max-width`, it will `improve` the` browser's handling` of small windows.
+
+
+```css
 div {
   height: 200px;
   width: 50%;
   background-color: powderblue;
 }
+```
 
-This element has a height of 100 pixels and a width of 500 pixels.
-Example
-Set the height and width of another <div> element:
+### Note: 
+Remember that the `height` and `width` properties `do not include` `padding`, `borders`, or `margins`! 
 
+### Setting max-width
+
+`max-width` property is used to `set` the `maximum width` of an `element`.
+
+`max-width` can be `specified` in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+
+
+```css
 div {
-  height: 100px;
-  width: 500px;
+  height: 200px;
+  max-width: 500px;
   background-color: powderblue;
 }
+```
 
-Note: Remember that the height and width properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element!
 
-Setting max-width
-The max-width property is used to set the maximum width of an element.
+### Note: 
+`If` for `some` `reason` we `use both` the `width property` and the `max-width property` on the `same` `element`, and the `value` `of` the `width property` is `larger` than  `max-width property`;  `max-width` `property will be used` (and the width property will be ignored).
 
-The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
-
-The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
-
-Using max-width instead, in this situation, will improve the browser's handling of small windows.
-
-Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
-
-This element has a height of 100 pixels and a max-width of 500 pixels.
-Note: If you for some reason use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored).
-
-Example
-This <div> element has a height of 100 pixels and a max-width of 500 pixels: 
-
+```css
 div {
   max-width: 500px;
   height: 100px;
   background-color: powderblue;
 }
-
-
+```
