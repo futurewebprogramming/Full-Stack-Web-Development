@@ -9,7 +9,6 @@ CSS Height, Width and Max-width
 
 CSS `max-width` property is used to `set` the `maximum width` `of` an `element`.
 
-height and width properties do not include padding, borders, or margins. 
 
 It sets the height/width of the area inside the padding, border, and margin of the element.
 
