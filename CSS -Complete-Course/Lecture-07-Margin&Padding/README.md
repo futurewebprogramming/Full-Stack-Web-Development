@@ -4,6 +4,10 @@
 
 Margins are used to create _space_ around _elements_, `outside` of any defined `borders`.
 
+margin is an invisible space around box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of  box can cause it to overlap other things on the page. Whether using the standard or alternative box model, margin is always added after the size of the visible box has been calculated.
+
+We can control all margins of an element at once using the margin property, or each side individually using the equivalent longhand properties:
+
 ```css
 p{
   margin: 20px; /*margin short hand property*/
@@ -136,6 +140,8 @@ div {
 
 ### CSS Margin Collapse
 Sometimes two margins collapse into a single margin.
+Two margins will combine to become one margin. Its size will be equal to the largest individual margin.
+
 ```css
 h1 {
   margin-bottom: 50px;
@@ -154,6 +160,8 @@ But `due` to `margin collapse`, the actual margin ends up being `50px`.
 ## CSS Padding
 
 `Padding` is used to create `space` `around` an `element`'s `content`, `inside` of any defined `borders`.
+
+padding sits between the border and the content area and is used to push content away from the border. Unlike margins, we cannot have a negative padding. Any background applied to our element will display behind the padding.
 
 setting the padding for each side of an element (top, right, bottom, and left).
 
