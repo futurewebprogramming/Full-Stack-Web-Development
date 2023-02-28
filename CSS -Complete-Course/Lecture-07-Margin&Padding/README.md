@@ -2,6 +2,32 @@
 
 ## CSS Margin & Padding
 
+Before we learn about css margin & padding we have to learn about outline which i have missed while we were learning about css border., 
+
+## CSS Outline 
+
+
+An outline is a line drawn outside the element's border.
+
+it is different then border
+```css
+  h1{
+            outline-style: solid;
+            outline-width: 13px;
+            outline-color: hsla(360,100%,50%,0.9);
+            border: 12px solid orange;
+        }
+
+```
+
+Shorthand Property of outline
+
+```css
+h1{
+    outline: 3px solid blue;
+}
+```
+
 Margins are used to create _space_ around _elements_, `outside` of any defined `borders`.
 
 margin is an invisible space around box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of  box can cause it to overlap other things on the page. Whether using the standard or alternative box model, margin is always added after the size of the visible box has been calculated.
