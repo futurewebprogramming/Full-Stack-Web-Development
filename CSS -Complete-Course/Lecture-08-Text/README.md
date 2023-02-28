@@ -1,6 +1,6 @@
 # Lecture -08
 
-## Outline - Text & Font
+## CSS Text & Fonts
 
 # CSS Text
 CSS has a lot of properties for formatting text.
