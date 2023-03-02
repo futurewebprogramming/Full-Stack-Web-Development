@@ -1,4 +1,4 @@
-# Lecture -08
+# Lecture -09
 
 ## CSS Text & Fonts
 
@@ -127,23 +127,31 @@ h1 {
 ```
 
 
-CSS Fonts
+### CSS Fonts
 Font Selection is Important
-Choosing the right font has a huge impact on how the readers experience a website.
+Choosing right font has a huge impact.
 
-The right font can create a strong identity for your brand.
+Using a font that is easy to read is important. font adds value to your text. It is also important to choose the correct color and text size for the font.
 
-Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.
-
-Generic Font Families
+### Generic Font Families
 In CSS there are five generic font families:
 
-Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
-Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
-Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
-Cursive fonts imitate human handwriting.
-Fantasy fonts are decorative/playful fonts.
-All the different font names belong to one of the generic font families. 
+#### Serif fonts:
+have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+
+#### Sans-serif:
+fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+
+#### Monospace fonts:
+here all the letters have the same fixed width. They create a mechanical look. 
+
+#### Cursive fonts:
+imitate human handwriting.
+
+#### Fantasy fonts:
+are decorative playful fonts.
+
+All different font names belong to one of the generic font families. 
 
 Difference Between Serif and Sans-serif Fonts
 

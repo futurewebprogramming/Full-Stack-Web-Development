@@ -2,14 +2,15 @@
 
 ## CSS Box Model
 
-![CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model-devtools.png "CSS Box Model Picture by MDN")
-
 All HTML elements can be considered as boxes.
 
 ### CSS Box Model
 
 CSS box model is essentially a box that wraps around every HTML element. 
 It consists of margins, borders, padding, and the actual content. 
+
+![CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model-devtools.png "CSS Box Model Picture by MDN")
+
 
 
 ### Content - 
