@@ -5,7 +5,6 @@
 # CSS Text
 CSS has a lot of properties for formatting text.
 
-
 ### Color
 to Set the Text Color
 
@@ -15,7 +14,6 @@ to Set the Text Color
     }
 
 ```
-
 ### Background Color
 
 to set background color of any element.
@@ -126,24 +124,23 @@ h1 {
 }
 ```
 
-
 ### CSS Fonts
+
+font adds value to your text. It is also important to choose the correct color and text size for the font.
 Font Selection is Important
 Choosing right font has a huge impact.
-
-Using a font that is easy to read is important. font adds value to your text. It is also important to choose the correct color and text size for the font.
 
 ### Generic Font Families
 In CSS there are five generic font families:
 
 #### Serif fonts:
-have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+have a small stroke at edges of each letter. They create a sense of formality and elegance.
 
 #### Sans-serif:
 fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
 
 #### Monospace fonts:
-here all the letters have the same fixed width. They create a mechanical look. 
+all letters have the same fixed width. They create a mechanical look. 
 
 #### Cursive fonts:
 imitate human handwriting.
@@ -158,7 +155,7 @@ Difference Between Serif and Sans-serif Fonts
 ![FonT Selection](https://www.w3schools.com/css/serif.gif "Pic by w3school")
 
 
-CSS font-family Property
+### CSS font-family Property
 
 we use the font-family property to specify the font of a text.
 
@@ -176,7 +173,7 @@ we use the font-family property to specify the font of a text.
 
 Web safe fonts are fonts that are universally installed across all browsers and devices.
 
-Fallback Fonts
+### Fallback Fonts
 However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.
 
 Therefore, it is very important to always use fallback fonts.
@@ -190,8 +187,10 @@ font-family: Tahoma, Verdana, sans-serif;
 
 ```
 Best Web Safe Fonts for HTML and CSS
-The following list are the best web safe fonts for HTML and CSS:
 
+few web safe fonts for HTML and CSS:
+
+```css 
 Arial (sans-serif)
 Verdana (sans-serif)
 Tahoma (sans-serif)
@@ -201,28 +200,31 @@ Georgia (serif)
 Garamond (serif)
 Courier New (monospace)
 Brush Script MT (cursive)
+```
 
 ### CSS Font Fallbacks
 
 Commonly Used Font Fallbacks
-Below are some commonly used font fallbacks, organized by the 5 generic font families:
+Below are some commonly used font fallbacks, organized by 5 generic font families:
 
+```css
 Serif
 Sans-serif
 Monospace
 Cursive
 Fantasy
+```
 
 ### CSS Font Style
 
 Font Style
-The font-style property is mostly used to specify italic text.
+font-style property is mostly used to specify italic text.
 
 This property has three values:
 
-normal - The text is shown normally
-italic - The text is shown in italics
-oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+normal - text is shown normally
+italic - text is shown in italics
+oblique - text is "leaning" (oblique is very similar to italic, but less supported)
 
 ```css
 p.normal {
@@ -230,40 +232,42 @@ p.normal {
 }
 ```
 
-Font Weight
-The font-weight property specifies the weight of a font:
+### Font Weight
+font-weight property specifies  weight of a font:
 ```css
 p.normal {
   font-weight: normal;
 }
 ```
-Font Variant
-The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+### Font Variant
+font-variant property specifies whether or not a text should be displayed in a small-caps font.
 ```css
 p.normal {
   font-variant: normal;
 }
 ```
 
-CSS Font Size
+### CSS Font Size
  font-size property sets the size of the text.
 
-Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+Being able to manage the text size is important in web design. However, we should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
 
-Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for para
+Always use the proper HTML tags, like `<h1>` - `<h6>` for headings and `<p>` for para
 
-Absolute size:
+### Absolute size:
 
-Sets the text to a specified size
-Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
-Absolute size is useful when the physical size of the output is known
-Relative size:
+Sets text to a specified size
+Does not allow a user to change text size in all browsers.
+
+Absolute size is useful when physical size of the output is known
+
+### Relative size:
 
 Sets the size relative to surrounding elements
-Allows a user to change the text size in browsers
+Allows a user to change text size in browsers
 
 Set Font Size With Pixels
-Setting the text size with pixels gives you full control over the text size:
+Setting text size with pixels gives you full control over the text size:
 
 ```css
 h1 {
@@ -271,12 +275,12 @@ h1 {
 }
 ```
 
-Set Font Size With Em
-To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+Set Font Size With `Em`
+To allow users to resize text , many developers use em instead of pixels.
 
-1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+`1em` is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
 
-The size can be calculated from pixels to em using this formula: pixels/16=em
+size can be calculated from pixels to em using this formula: pixels/16=em
 
 ```css
 h1 {
@@ -286,7 +290,7 @@ h1 {
 ```
 
 Use a Combination of Percent and Em
-The solution that works in all browsers, is to set a default font-size in percent for the <body> element:
+The solution that works in all browsers, is to set a default font-size in percent for `<body>` element:
 
 ```css
 body {
@@ -307,7 +311,7 @@ p {
 ```
 
 ### Responsive Font Size
-The text size can be set with a vw unit, which means the "viewport width".
+text size can be set with a vw unit, which means the "viewport width".
 
 That way the text size will follow the size of the browser window:
 
@@ -317,13 +321,13 @@ That way the text size will follow the size of the browser window:
 
 ### CSS Google Fonts
 
-Google Fonts
+### Google Fonts
 If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.
 
 Google Fonts are free to use, and have more than 1000 fonts to choose from.
 
 How To Use Google Fonts
-Just add a special style sheet link in the <head> section and then refer to the font in the CSS.
+Just add a special style sheet link in the `<head>` section and then refer to the font in the CSS.
 
 ```html
 <head>
@@ -336,7 +340,7 @@ body {
 </head>
 ```
 
-Use Multiple Google Fonts
+### Use Multiple Google Fonts
 To use multiple Google fonts, just separate the font names with a pipe character (|), like this:
 
 ```css
@@ -350,11 +354,11 @@ h1.c {font-family: "Trirong", serif;}
 </head>
 ```
 
-Styling Google Fonts
+### Styling Google Fonts
 Of course you can style Google Fonts as you like, with CSS!
 
 
-Enabling Font Effects
+### Enabling Font Effects
 Google has also enabled different font effects that you can use.
 
 First add effect=effectname to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with font-effect- and ends with the effectname.
