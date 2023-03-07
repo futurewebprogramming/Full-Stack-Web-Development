@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: blueviolet;
+    background-color: azure;
+    text-align:center;
+    line-height: 20px;
+    word-spacing: 20px;
+}
+h2{
+    text-align: left;
+    text-decoration: underline dotted 12px blue;
+    text-transform: capitalize;
+    text-indent: 100px;
+    letter-spacing: 20px;
+    text-shadow: 2px 1px 4px rgb(176, 176, 176);
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    font: italic small-caps bold 12px Georgia, serif;
+
+}
+a{
+    text-decoration: none;
+}
+

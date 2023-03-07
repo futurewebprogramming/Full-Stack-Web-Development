@@ -1,8 +1,8 @@
 # Lecture -09
 
-## CSS Text & Fonts
+## Styling Text with Css using CSS Text and Fonts Properties
 
-# CSS Text
+# CSS Text Properties
 CSS has a lot of properties for formatting text.
 
 ### Color
@@ -22,12 +22,18 @@ h1{
     background-color: #afc;
 }
 ```
+## Text layout
 
-### Text Alignment and Text Direction
-Text Alignment
-The text-align property is used to set the horizontal alignment of a text.
+### Text Alinment
+text-align property is used to control how text is aligned within its containing content box.
 
-A text can be left or right aligned, centered, or justified.
+>left: Left-justifies the text.
+
+>right: Right-justifies the text.
+
+>center: Centers the text.
+
+>justify: Makes the text spread out, varying the gaps in between the words so that all lines of text are the same width.
 
 ```css
 h1 {
@@ -35,15 +41,26 @@ h1 {
 }
 ```
 
-### Text Direction & unicode-bidi
-unicode-bidi roperties can be used to change the text direction of an element
+### Line height
+line-height property sets the height of each line of text. This property can not only take most length and size units, but can also take a unitless value
+```css
+p {
+  line-height: 1.6;
+}
+```
 
-### Vertical Alignment
-
-vertical-align property sets the vertical alignment of an element.
+### Letter and word spacing
+letter-spacing and word-spacing properties allow you to set the spacing between letters and words in our text.
+```css
+p::first-line {
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}
+```
 
 ## Text Decoration
-Individual Text Decoration property
+text-decoration shorthand CSS property sets the appearance of decorative lines on text.
+
 
 >text-decoration-line
 
@@ -86,52 +103,38 @@ p.capitalize {
   text-transform: capitalize;
 }
 ```
-### Text Spacing
-text-indent
-letter-spacing
-line-height
-word-spacing
-white-space
 
-```css
-p {
-  text-indent: 50px;
-}
-h1 {
-  letter-spacing: 5px;
-}
-p.small {
-  line-height: 0.8;
-}
-p.one {
-  word-spacing: 10px;
-}
-p {
-  white-space: nowrap;
-}
-```
+
 
 ### Text Shadow
-property adds shadow to text.
-In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
-
+text-shadow CSS property adds shadows to text. 
+we only specify the horizontal shadow (2px) and the vertical shadow (2px):
+and can add blur.
 
 ```css
 h1 {
-  text-shadow: 2px 2px; /* also can add multiple values*/
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 2px 2px 2px red; 
 }
 ```
 
 ### CSS Fonts
 
-font adds value to your text. It is also important to choose the correct color and text size for the font.
-Font Selection is Important
-Choosing right font has a huge impact.
+### Font families
 
-### Generic Font Families
-In CSS there are five generic font families:
+To set a different font for your text, you use the font-family property — this allows you to specify a font (or list of fonts) for the browser to apply to the selected elements.
+
+browser will only apply a font if it is available on the machine the website is being accessed on; if not, it will just use a browser default font. 
+```css
+p {
+  font-family: arial;
+}
+
+```
+
+## Default fonts / Generic Font Families
+
+CSS defines five generic names for fonts: serif, sans-serif, monospace, cursive, and fantasy.
 
 #### Serif fonts:
 have a small stroke at edges of each letter. They create a sense of formality and elegance.
@@ -140,7 +143,7 @@ have a small stroke at edges of each letter. They create a sense of formality an
 fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
 
 #### Monospace fonts:
-all letters have the same fixed width. They create a mechanical look. 
+Fonts where every character has the same width, typically used in code listings.
 
 #### Cursive fonts:
 imitate human handwriting.
@@ -148,30 +151,27 @@ imitate human handwriting.
 #### Fantasy fonts:
 are decorative playful fonts.
 
-All different font names belong to one of the generic font families. 
 
 Difference Between Serif and Sans-serif Fonts
 
 ![FonT Selection](https://www.w3schools.com/css/serif.gif "Pic by w3school")
 
+A font-family example
 
-### CSS font-family Property
+Let's add to our previous example, giving the paragraphs a sans-serif font:
 
-we use the font-family property to specify the font of a text.
 
 ```css
-.p1 {
-  font-family: "Times New Roman", Times, serif;
+p {
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.p2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 ```
-## CSS Web Safe Fonts
+### Web safe fonts
+Speaking of font availability, there are only a certain number of fonts that are generally available across all systems and can therefore be used without much worry. These are the so-called web safe fonts.
 
-Web safe fonts are fonts that are universally installed across all browsers and devices.
 
 ### Fallback Fonts
 However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.
@@ -186,9 +186,6 @@ font-family: Tahoma, Verdana, sans-serif;
 }
 
 ```
-Best Web Safe Fonts for HTML and CSS
-
-few web safe fonts for HTML and CSS:
 
 ```css 
 Arial (sans-serif)
@@ -202,18 +199,6 @@ Courier New (monospace)
 Brush Script MT (cursive)
 ```
 
-### CSS Font Fallbacks
-
-Commonly Used Font Fallbacks
-Below are some commonly used font fallbacks, organized by 5 generic font families:
-
-```css
-Serif
-Sans-serif
-Monospace
-Cursive
-Fantasy
-```
 
 ### CSS Font Style
 
@@ -248,7 +233,7 @@ p.normal {
 ```
 
 ### CSS Font Size
- font-size property sets the size of the text.
+font-size property sets the size of the text.
 
 Being able to manage the text size is important in web design. However, we should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
 
@@ -417,7 +402,7 @@ h1 {
 }
 ```
 
-## CSS Font Property
+## CSS Shorthand Font Property
 To shorten code, it is also possible to specify all the individual font properties in one property.
 
 font property is a shorthand property for:
