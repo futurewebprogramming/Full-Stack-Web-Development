@@ -12,9 +12,25 @@ Display property specifies display behavior (type of rendering box) of an elemen
 
 Displays an element as an inline element (like `<span>)`. Any height and width properties will have no effect. and it will take space according to inner content.
 
+```css
+h2{
+        display: inline;
+    }
+```
 ### Displa: block;
 Displays an element as a block element (like `<p>`). It starts on a new line, and takes up the whole width. we can control widh and height of element.
 
+```css
+h2{
+        display: block;
+    }
+```
 ### Display: inline-block;
 
 Displays an element as an inline-level block container. element itself is formatted as an inline element, but we can apply height and width values
+
+```css
+h2{
+        display: inline-block;
+    }
+```
