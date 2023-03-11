@@ -5,7 +5,16 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
- 
+ <style>
+   .directionchange{
+      direction: rtl;
+      unicode-bidi: bidi-override;
+   }
+   img{
+      width: 50px;
+      vertical-align:text-top;
+   }
+ </style>
    </head>
    <body>
    <h2>fonts and text style</h2>
@@ -13,6 +22,10 @@
    <a href="#">Home</a>
    <a href="#">About</a>
    <a href="#">Contact</a>
-   
+   <p class="directionchange">هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
+   <p class="directionchange"> یہ پیراگراف عربی میں ہے ، لہذا آپ کو دائیں سے بائیں منتقل ہونا چاہئے۔</p>
+   <p class="directionchange">यह पैराग्राफ अरबी में है, इसलिए आपको दाएं से बाएं जाना चाहिए।</p>
+   <img src="https://png.pngtree.com/png-clipart/20190603/original/pngtree-gold-stars-png-image_370246.jpg" alt="">
+   image with a text-bottom alignment.
 </body>
 </html>

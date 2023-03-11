@@ -104,8 +104,6 @@ p.capitalize {
 }
 ```
 
-
-
 ### Text Shadow
 text-shadow CSS property adds shadows to text. 
 we only specify the horizontal shadow (2px) and the vertical shadow (2px):
@@ -117,6 +115,18 @@ h1 {
   text-shadow: 2px 2px 2px red; 
 }
 ```
+
+## Text Direction
+
+```html
+<p>هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
+<p>یہ پیراگراف عربی میں ہے ، لہذا آپ کو دائیں سے بائیں منتقل ہونا چاہئے۔</p>
+<p>यह पैराग्राफ अरबी में है, इसलिए आपको दाएं से बाएं जाना चाहिए।</p>
+```
+What if we have arabic or any other lanague wich start from right to left for that we have. 
+
+### CSS Direction Property
+direction CSS property sets direction of text, table columns, and horizontal overflow. Use rtl for languages written from right to left (like Urdu or Arabic), and ltr for those written from left to right (like English and most other languages).
 
 ### CSS Fonts
 
