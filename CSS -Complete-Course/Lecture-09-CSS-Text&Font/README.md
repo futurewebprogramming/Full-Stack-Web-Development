@@ -118,16 +118,44 @@ h1 {
 
 ## Text Direction
 
+
+What if we have arabic or any other lanague wich start from right to left for that we have. 
+
+### CSS Direction Property
+direction CSS property sets direction of text, table columns, and horizontal overflow. Use rtl for languages written from right to left (like Urdu or Arabic), and ltr for those written from left to right (like English and most other languages).
 ```html
 <p>هذه الفقرة باللغة العربية ، لذا يجب الانتقال من اليمين إلى اليسار.</p>
 <p>یہ پیراگراف عربی میں ہے ، لہذا آپ کو دائیں سے بائیں منتقل ہونا چاہئے۔</p>
 <p>यह पैराग्राफ अरबी में है, इसलिए आपको दाएं से बाएं जाना चाहिए।</p>
 ```
-What if we have arabic or any other lanague wich start from right to left for that we have. 
 
-### CSS Direction Property
-direction CSS property sets direction of text, table columns, and horizontal overflow. Use rtl for languages written from right to left (like Urdu or Arabic), and ltr for those written from left to right (like English and most other languages).
+```css
+p{
+      direction: rtl;
+      unicode-bidi: bidi-override;
+   }
+```
 
+## writing-mode
+
+writing-mode CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).
+```css
+p{
+  writing-mode: horizontal-tb;
+}
+p{
+  writing-mode: vertical-lr;
+}
+p{
+  writing-mode: vertical-rl;
+}
+```
+
+## Text Orientation
+text-orientation CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not horizontal-tb). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
+
+
+```
 ### CSS Fonts
 
 ### Font families
