@@ -1,0 +1,7 @@
+h2{
+    width: 50%;
+    height: 50vh;
+    font-size: clamp(20px,100vw,30px);
+    background-color: blueviolet;
+
+}

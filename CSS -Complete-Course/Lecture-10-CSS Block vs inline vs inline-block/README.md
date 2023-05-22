@@ -1,6 +1,6 @@
-# Lecture -09
+# Lecture -10
 
-## CSS display: inline, display: inline-block and display: block:
+## C inline, display: inline-block and display: block:
 
 Before we learn about Display, as we have study in HTML Module, some elements have block level scope and some have inline inline scope.
 
