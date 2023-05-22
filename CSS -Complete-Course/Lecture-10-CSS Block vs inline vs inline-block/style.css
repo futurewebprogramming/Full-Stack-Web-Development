@@ -1,6 +1,22 @@
 h2{
     background-color: magenta;
+
 }
 h3{
     background-color: aqua;
+    display: block;
+    
+}
+span{
+    background-color: black;
+    color: aliceblue;
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+}
+
+h3{
+    display: inline-block;
+    width: 400px;
+    height: 100px;
 }
