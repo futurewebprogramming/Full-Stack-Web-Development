@@ -1,5 +1,5 @@
 # Lecture :12
-
+![https://www.youtube.com/playlist?list=PLZ3EtyMeDWcmVt6YhqZsUC-ywqngUpB6l](/Assets/Lecture%20-%2012%20-%20CSS%20-%20Position%20Property.png "Full Stack Web Development Lecture 12")
 ## Understanding the CSS Position Property
 
 Good day, everyone! Today, we'll be diving into a vital part of CSS  "position" property. Mastering CSS positioning is a crucial skill to develop when it comes to creating dynamic and visually engaging websites.
@@ -67,6 +67,12 @@ div {
   top: 0;
 }
 ```
+
+### Bonus Part of the Video
+
+## Z-index
+
+with this we can adjust the behaviour of element (Which element look at top) by defalut element have z-index: 0 ,
 
 Exercise:
 

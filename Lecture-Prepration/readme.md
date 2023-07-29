@@ -6,10 +6,10 @@ Good day, everyone! Today, we'll be diving into a vital part of CSS  "position" 
 
 The position property in CSS defines how an element is positioned in a layout. There are five key types of positioning:
 
-- Static
-- Relative
-- Absolute
-- Fixed
+- Static (Default Postion)
+- Relative (Relative to it's Default Postion)
+- Absolute (Relative to it's nearest Ancesstor[parent] if parent have not postion then it will be top left corner of browser web page.)
+- Fixed (Element will be fix to corner of web page)
 - Sticky
 
 ## 1. Static Positioning
