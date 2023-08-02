@@ -2,7 +2,7 @@
 
 ## Technologies we will be learning with so many Projects
 
-[![Full Stack Web Development](https://i.ytimg.com/vi/52klv1JkQF8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3LU1FTsVLpdmgxyUYaY-BPhXtrA "Full Stack Web Development")](https://youtu.be/52klv1JkQF8)
+[![Full Stack Web Development](/Assets/Full%20Stack%20Web%20Development.png "Full Stack Web Development")](https://youtu.be/52klv1JkQF8)
 
 HTML5
 

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid;
+    height: 400vh;
+    /* position: relative; */
+    /* width: 500px; */
+}
+.hero-section{
+    background-color: orangered;
+    height: 500px;
+}
+.navbar{
+    border: 50px solid;
+    position: sticky;
+    top: 0;
+}
+.child{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+  
+}
