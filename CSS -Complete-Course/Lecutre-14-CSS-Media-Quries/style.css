@@ -3,3 +3,15 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+/* I want to show a separate backgorund on mobile screen */
+
+body{
+    background-color: orange;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: aqua;
+    }
+}

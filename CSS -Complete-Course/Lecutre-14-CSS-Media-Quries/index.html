@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Media Quries</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .product-card{
+            background-color: blueviolet;
+            padding: 20px;
+            width: 500px;
+
+        }
+        .product-card img{
+            width: 100%;
+        }
+        @media (max-width:500px){
+            .product-card{
+                width: 400px;
+            }
+        }
+        @media (max-width: 400px){
+            .product-card{
+                width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h2>Lecutre -14 Understanding Media Quries</h2>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nam esse eaque aliquid quae perspiciatis non ipsa animi, tempora laudantium perferendis voluptatem error, repellat rem officia laboriosam eveniet ex officiis.
+       
+    </div>
+    <div class="product-card">
+        <h2>Product title</h2>
+        <img src="/Assets/Lecture -14 CSS Media Quries.png" alt="">
+        <p class="product-short-d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, saepe.</p>
+        <button>Add to Cart</button>
+
+    </div>
 </body>
 </html>
