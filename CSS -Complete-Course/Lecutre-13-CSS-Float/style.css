@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 20px;
+}
+.left{
+    float: left;
+    width: 50%;
+    background-color: orange;
+    height: 400px;
+}
+.right{
+float: right;
+width: 50%;
+background-color: blueviolet;
+height: 400px;
+}
