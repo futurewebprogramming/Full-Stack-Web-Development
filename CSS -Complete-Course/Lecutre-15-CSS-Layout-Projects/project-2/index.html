@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .sideheader {
+        background-color: black;
+        height: 100vh;
+        width: 20%;
+        float: left;
+        padding: 20px;
+      }
+      .sideheader .sidenavbar .sideul li {
+        list-style: none;
+      }
+      .sideheader .sidenavbar .sideul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+      }
+      .sideheader .sidenavbar .sideul li a:hover {
+        text-decoration: underline 2px orange;
+        padding: 2px;
+      }
+      .main-content {
+        padding: 20px;
+        width: 80%;
+        float: right;
+        background-color: antiquewhite;
+        height: 100vh;
+      }
+      @media (max-width: 500px) {
+        .sideheader {
+          width: 25%;
+        }
+        .main-content {
+          width: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sideheader">
+      <nav class="sidenavbar">
+        <ul class="sideul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-content">
+      <h2>CSS Template A full-height, fixed sidenav and content.</h2>
+      <p>CSS Template A full-height, fixed sidenav and content.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project -1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: black;
+        height: 100px;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .main-content {
+        background-color: antiquewhite;
+        /* width: 100%; */
+      }
+      .columns {
+        width: 33.3%;
+        height: 400px;
+        border: 2px solid orange;
+        float: left;
+      }
+      .footer {
+        background-color: black;
+        color: white;
+        clear: both;
+        padding: 20px;
+        height: 100px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.4rem;
+      }
+      @media (max-width: 500px) {
+        .columns {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <h2>Webiste header</h2>
+    </header>
+    <!-- main content -->
+    <div class="main-content">
+      <div class="columns">Colum1</div>
+      <div class="columns">Colum2</div>
+      <div class="columns">Colum3</div>
+    </div>
+    <!-- website Footer -->
+    <footer class="footer">
+      <p>Website Footer</p>
+    </footer>
+  </body>
+</html>

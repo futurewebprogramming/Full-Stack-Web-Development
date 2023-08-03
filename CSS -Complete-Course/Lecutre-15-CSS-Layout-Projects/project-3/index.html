@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: black;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .header .navbar ul li {
+        list-style: none;
+      }
+      .navbar {
+        margin: 100px 0px;
+        height: 100px;
+      }
+      .header .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+        float: left;
+        padding: 20px;
+      }
+      .main-content {
+        width: 900px;
+        margin: 120px auto;
+        background-color: antiquewhite;
+        height: 200vh;
+      }
+      .card img {
+        width: 100%;
+      }
+      .footer {
+        background-color: black;
+        padding: 20px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      @media (max-width: 500px) {
+        .header .navbar ul li {
+          display: inline-block;
+        }
+        .card {
+          width: 100vw;
+        }
+        .card img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <navbar class="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </navbar>
+    </header>
+    <!-- main content -->
+    <div class="main-content">
+      <div class="card">
+        <h2>CSS Template</h2>
+        <p>A topnav, content and a footer.</p>
+        <img
+          src="https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649718594/Web_Assets/blog/working_with_css_22218720ab/working_with_css_22218720ab-jpg?_i=AA"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <p>Website Footer</p>
+    </footer>
+  </body>
+</html>
