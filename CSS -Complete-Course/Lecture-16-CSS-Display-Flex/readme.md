@@ -1,5 +1,7 @@
 # Lecture 16: Mastering Display Flex Properties in CSS
 
+![Learn About CSS FLexbox](/Assets/Lecture%20-16%20Flexbox%20in%20CSS%20-%20Learn%20CSS%20FLexbox%20in%20One%20Video.png)
+
 In this lecture, we will cover a wide range of concepts related to the `display: flex` property in CSS, from the basics to advanced techniques. We'll explore how Flexbox can be used to create flexible and responsive layouts, and we'll provide examples to illustrate each concept.
 
 **1. Introduction to Display Flex:**
