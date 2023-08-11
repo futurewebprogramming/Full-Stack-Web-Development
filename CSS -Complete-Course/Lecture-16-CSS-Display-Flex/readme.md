@@ -21,27 +21,6 @@ Flexbox is a powerful layout model that allows us to create dynamic and flexible
 To start using the Flexbox model, you need to first define a flex container.
 Flexbox consists of a flex container and its child flex items. By setting the container's `display` property to `flex`, we activate the Flexbox layout. Flex items are placed along the main axis and the cross axis.
 
-## CSS Flex Container
-
-### Parent Element (Container)
-
-Display defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
-
-![Flex Container - Picture Credit CSS Tricks](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
-
-```css
-.container {
-  display: flex; /* or inline-flex */
-}
-```
-
-## flex items
-
-Child Elements (Items)
-The direct child elements of a flex container automatically becomes flexible (flex) items.
-
-![Flex Items - Picture Credit CSS Tricks](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
-
 **Example:**
 
 ```html
@@ -69,6 +48,27 @@ The direct child elements of a flex container automatically becomes flexible (fl
 </body>
 </html>
 ```
+
+## CSS Flex Container
+
+### Parent Element (Container)
+
+Display defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+
+![Flex Container - Picture Credit CSS Tricks](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
+
+```css
+.container {
+  display: flex; /* or inline-flex */
+}
+```
+
+## flex items
+
+Child Elements (Items)
+The direct child elements of a flex container automatically becomes flexible (flex) items.
+
+![Flex Items - Picture Credit CSS Tricks](https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg)
 
 ## Flex Container Properties
 
