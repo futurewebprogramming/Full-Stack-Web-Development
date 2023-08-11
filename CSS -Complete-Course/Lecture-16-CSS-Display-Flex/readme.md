@@ -174,7 +174,9 @@ A shorthand property combining `flex-direction` and `flex-wrap`.
 }
 ```
 
-- `justify-content`: property is used to align the flex items and the values are `center` , `flex-start` , `flex-end`,`space-around`,`space-between`
+### `justify-content`
+
+justify content property is used to align the flex items and the values are `center` , `flex-start` , `flex-end`,`space-around`,`space-between`
   
 `center`  value aligns the flex items at the center of the container 
 
