@@ -11,22 +11,53 @@
         box-sizing: border-box;
       }
       .flex-container {
-        border: 2px solid red;
+        border: 2px solid gold;
         display: flex;
-        flex-flow: row wrap;
+        padding: 20px;
+        background-color: pink;
+        height: 100vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* flex-flow: row wrap; */
+        /* justify-content: center; */
+        /* align-items: baseline; */
+        /* align-content: space-evenly; */
+        gap: 20px;
       }
       .flex-item {
-        border: 2px solid gray;
-        width: 100px;
+        flex: 0 0 200px;
         height: 100px;
+        border: 2px solid blue;
       }
+      .item1 {
+        flex-shrink: 4;
+        /* order: 2; */
+        /* flex-grow: 1; */
+        /* height: 200px;
+        font-size: 2rem; */
+        /* align-self: center; */
+      }
+      .item2 {
+        flex-shrink: 2;
+        /* flex-grow: 2; */
+        /* order: 3; */
+      }
+      .item3 {
+        flex-shrink: 3;
+        /* flex-grow: 1; */
+      }
+      /* @media (max-width: 450px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      } */
     </style>
   </head>
   <body>
     <div class="flex-container">
-      <div class="flex-item">Item 1</div>
-      <div class="flex-item">Item 2</div>
-      <div class="flex-item">Item 3</div>
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
     </div>
   </body>
 </html>

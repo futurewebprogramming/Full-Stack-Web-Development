@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        border: 2px solid orange;
+        height: 100vh;
+        flex-direction: row;
+        padding: 20px;
+        /* gap: 20px; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: row wrap; */
+        /* justify-content: center; */
+        /* align-content: center; */
+        /* align-content: space-between; */
+        align-items: baseline;
+      }
+      .flex-item {
+        height: 100px;
+        flex-basis: 200px;
+        border: 2px solid gray;
+      }
+      .item1 {
+        /* order: 1; */
+        /* flex-grow: 1; */
+        flex-shrink: 10;
+      }
+      .item2 {
+        font-size: 50px;
+        /* order: 3; */
+        /* flex-grow: 3; */
+        flex-shrink: 2;
+        height: 200px;
+      }
+      .item3 {
+        /* order: 2; */
+        /* flex-grow: 1; */
+        flex-shrink: 6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learning CSS FlexBox</h1>
+    <div class="flex-container">
+      <div class="flex-item item1">Item1</div>
+      <div class="flex-item item2">Item2</div>
+      <div class="flex-item item3">Item3</div>
+    </div>
+  </body>
+</html>
