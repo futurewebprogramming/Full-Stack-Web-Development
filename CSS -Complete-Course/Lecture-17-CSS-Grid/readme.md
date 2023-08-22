@@ -1,10 +1,13 @@
 # Lecture - 17 CSS Grid
 
-Grid Layout
+## Grid Layout
+
 The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
 
+[![CSS Grid Container](https://css-tricks.com/wp-content/uploads/2018/11/align-content-stretch.svg)](https://www.youtube.com/@futureprogramming)
 
-Grid Elements
+## Grid Elements
+
 A grid layout consists of a parent element, with one or more child elements.
 
 ```html
@@ -21,8 +24,8 @@ A grid layout consists of a parent element, with one or more child elements.
 </div>
 ```
 
+## Display Property
 
-Display Property
 An HTML element becomes a grid container when its display property is set to grid or inline-grid.
 
 ```css
@@ -33,22 +36,25 @@ An HTML element becomes a grid container when its display property is set to gri
 
 All direct children of the grid container automatically become grid items.
 
-Grid Columns
+## Grid Columns
+
 The vertical lines of grid items are called columns.
 
 ![Gird Colmuns](https://www.w3schools.com/css/grid_columns.png)
 
-Grid Rows
+### Grid Rows
+
 The horizontal lines of grid items are called rows.
 
 ![Grid Rows](https://www.w3schools.com/css/grid_rows.png)
 
-Grid Gaps
+### Grid Gaps
+
 The spaces between each column/row are called gaps.
 
 ![Grid Gaps](https://www.w3schools.com/css/grid_gaps.png)
 
-column-gap property sets the gap between the columns:
+### `column-gap` property sets the gap between the columns
 
 ```css
 .grid-container {
@@ -57,7 +63,7 @@ column-gap property sets the gap between the columns:
 }
 ```
 
-row-gap property sets the gap between the rows:
+### `row-gap` property sets the gap between the rows
 
 ```css
 .grid-container {
@@ -66,7 +72,7 @@ row-gap property sets the gap between the rows:
 }
 ```
 
-gap property is a shorthand property for the row-gap and the column-gap properties:
+### `gap` property is a shorthand property for the row-gap and the column-gap properties
 
 ```css
 .grid-container {
@@ -84,7 +90,8 @@ gap property can also be used to set both the row gap and the column gap in one 
 }
 ```
 
-Grid Lines
+#### Grid Lines
+
 The lines between columns are called column lines.
 
 The lines between rows are called row lines.
@@ -105,6 +112,27 @@ Place a grid item at column line 1, and let it end on column line 3:
 To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
 
 Grid containers consist of grid items, placed inside columns and rows.
+
+### Grid Container Properties
+
+Here are some of the CSS Grid Container properties:
+`display`
+`grid-template-columns`
+`grid-template-rows`
+`grid-template-areas`
+`grid-template`
+`grid-column-gap`
+`grid-row-gap`
+`grid-gap`
+`justify-items`
+`align-items`
+`place-items`
+`justify-content`
+`align-content`
+`place-content`
+`grid-auto-columns`
+`grid-auto-rows`
+`grid-auto-flow`
 
 ### grid-template-columns Property
 

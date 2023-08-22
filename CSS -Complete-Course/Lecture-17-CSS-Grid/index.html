@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid - Learn CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(3,200px);
+            /* grid-template-rows: 200px 250px 300px; */
+            /* grid-auto-rows: 100px; */
+            align-content: space-evenly;
+            grid-template: 
+            "first-trow first-row first-row" 40px
+            "second second second" 100px
+            "thirdRow thirdRow thirdRow" 200px / 1fr 1fr 1fr 1fr
+            ;
+            gap: 20px;
+            border: 10px solid;
+        }
+        .grid-item{
+             background-color: blueviolet;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
 </head>
 <body>
     <h1>Learn CSS Grid</h1>
+    <div class="grid-container">
+       <div class="grid-item item1">Item1</div>
+       <div class="grid-item item2">Item2</div>
+       <div class="grid-item item3">Item3</div>
+       <div class="grid-item item4">Item4</div>
+       <div class="grid-item item5">Item5</div>
+       <div class="grid-item item6">Item6</div>
+       <div class="grid-item item7">Item7</div>
+       <div class="grid-item item8">Item8</div>
+       <div class="grid-item item9">Item9</div>
+       <div class="grid-item item10">Item10</div>
+    </div>
 </body>
 </html>
