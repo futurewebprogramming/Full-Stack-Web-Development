@@ -4,7 +4,7 @@
 
 The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
 
-[![CSS Grid Container](https://css-tricks.com/wp-content/uploads/2018/11/align-content-stretch.svg)](https://www.youtube.com/@futureprogramming)
+[![CSS Grid Container](https://css-tricks.com/wp-content/uploads/2018/11/align-content-stretch.svg)](https://www.youtube.com/@futureprogramming){:target="_blank"}
 
 ## Grid Elements
 
@@ -48,49 +48,7 @@ The horizontal lines of grid items are called rows.
 
 ![Grid Rows](https://www.w3schools.com/css/grid_rows.png)
 
-### Grid Gaps
-
-The spaces between each column/row are called gaps.
-
-![Grid Gaps](https://www.w3schools.com/css/grid_gaps.png)
-
-### `column-gap` property sets the gap between the columns
-
-```css
-.grid-container {
-  display: grid;
-  column-gap: 50px;
-}
-```
-
-### `row-gap` property sets the gap between the rows
-
-```css
-.grid-container {
-  display: grid;
-  row-gap: 50px;
-}
-```
-
-### `gap` property is a shorthand property for the row-gap and the column-gap properties
-
-```css
-.grid-container {
-  display: grid;
-  gap: 50px 100px;
-}
-```
-
-gap property can also be used to set both the row gap and the column gap in one value:
-
-```css
-.grid-container {
-  display: grid;
-  gap: 50px;
-}
-```
-
-#### Grid Lines
+~~~~#### Grid Lines
 
 The lines between columns are called column lines.
 
@@ -107,13 +65,7 @@ Place a grid item at column line 1, and let it end on column line 3:
 }
 ```
 
-## CSS Grid Container
-
-To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
-
-Grid containers consist of grid items, placed inside columns and rows.
-
-### Grid Container Properties
+## Grid Container Properties
 
 Here are some of the CSS Grid Container properties:
 `display`
@@ -134,7 +86,7 @@ Here are some of the CSS Grid Container properties:
 `grid-auto-rows`
 `grid-auto-flow`
 
-### grid-template-columns Property
+### `grid-template-columns`
 
 The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
 
@@ -165,7 +117,8 @@ Set a size for the 4 columns:
 }
 ```
 
-grid-template-rows Property
+### `grid-template-rows`
+
 The grid-template-rows property defines the height of each row. value is a space-separated-list, where each value defines the height of the respective row:
 
 ```css
@@ -176,7 +129,8 @@ Example
 }
 ```
 
-justify-content Property
+### `justify-content`
+
 The justify-content property is used to align the whole grid inside the container.
 
 Note: The grid's total width has to be less than the container's width for the justify-content property to have any effect.
@@ -213,10 +167,9 @@ Example
 }
 ```
 
-align-content Property
+### `align-content`
 
 The align-content property is used to vertically align the whole grid inside the container.
-
 
 Note: The grid's total height has to be less than the container's height for the align-content property to have any effect.
 
@@ -259,15 +212,205 @@ Note: The grid's total height has to be less than the container's height for the
 }
 ```
 
-## CSS Grid Item
+### `Grid Template Areas`
+
+grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.
+
+```css
+grid-template-areas: "a b";
+grid-template-areas:
+  "a b b"
+  "a c d";
+```
+
+### `Grid Template`
+
+grid-template CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.
+
+```css
+/* grid-template-rows / grid-template-columns values */
+grid-template: 100px 1fr / 50px 1fr;
+grid-template: auto 1fr / auto 1fr auto;
+grid-template: [linename] 100px / [columnname1] 30% [columnname2] 70%;
+grid-template: fit-content(100px) / fit-content(40%);
+
+/* grid-template-areas grid-template-rows / grid-template-column values */
+grid-template:
+  "a a a"
+  "b b b";
+grid-template:
+  "a a a" 20%
+  "b b b" auto;
+grid-template:
+  [header-top] "a a a" [header-bottom]
+  [main-top] "b b b" 1fr [main-bottom]
+  / auto 1fr auto;
+```
+
+### Grid Gap
+
+The spaces between each column/row are called gaps.
+
+![Grid Gaps](https://www.w3schools.com/css/grid_gaps.png)
+
+### `column-gap` property sets the gap between the columns
+
+```css
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+}
+```
+
+### `row-gap` property sets the gap between the rows
+
+```css
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+}
+```
+
+### `gap` property is a shorthand property for the row-gap and the column-gap properties
+
+```css
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+}
+```
+
+gap property can also be used to set both the row gap and the column gap in one value:
+
+```css
+.grid-container {
+  display: grid;
+  gap: 50px;
+}
+```
+
+### `Justify Items`
+
+justify-items property is set on the grid container to give child elements (grid items) alignment in the inline direction.
+
+For pages in English, inline direction is left to right and block direction is downward.
+
+For this property to have any alignment effect, the grid items need available space around themselves in the inline direction.
+
+Tip: To align grid items in block direction instead of inline direction, use align-items property.
+
+```css
+#container {
+  display: grid;
+  justify-items: end;
+}
+```
+
+### Aling Items
+
+In Grid Layout, it controls the alignment of items on the Block Axis within their grid area.
+
+```css
+#container {
+  display: grid;
+  position: relative;
+  align-items: end;
+}
+```
+
+### `place-items`
+
+place-items shorthand property allows you to align items along both the block and inline directions at once (i.e. the align-items and justify-items properties) in a relevant layout system such as Grid or Flexbox. If the second value is not set, the first value is also used for it.
+
+If the place-items property has two values:
+
+place-items: start center;
+align-items property value is 'start'
+justify-items property value is 'center'
+If the place-items property has one value:
+
+place-items: end;
+align-items and justify-items property values are both 'end'
+
+```css
+#container {
+  place-items: start center;
+}
+```
+
+### Place content
+
+place-content property is used in flexbox and grid layouts, and is a shorthand property for the following properties:
+
+align-content
+justify-content
+If the place-content property has two values:
+
+place-content: start center;
+align-content property value is 'start'
+justify-content property value is 'center'
+If the place-content property has one value:
+
+place-content: end;
+align-content and justify-content property values are both 'end'
+
+```css
+#container
+{place-content: end space-between;
+place-content: space-around start;
+place-content: start space-evenly;
+place-content: end center;
+place-content: end;
+}
+```
+
+### grid-auto-columns
+
+grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of tracks.
+
+```css
+grid-auto-columns: auto;
+grid-auto-columns: 1fr;
+grid-auto-columns: min-content;
+grid-auto-columns: minmax(10px, auto);
+
+## CSS Grid Items Properties
+```
+
+### `grid-auto-rows`
+
+grid-auto-rows CSS property specifies the size of an implicitly-created grid row track or pattern of tracks.
+
+```css
+grid-auto-rows: min-content;
+grid-auto-rows: max-content;
+grid-auto-rows: auto;
+grid-auto-rows: 100px;
+
+```
+
+### `grid-auto-flow`
+
+grid-auto-flow property controls how auto-placed items get inserted in the grid. how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid.
+
+```css
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: dense;
+grid-auto-flow: row dense;
+grid-auto-flow: column dense;
+```
+
+## Grid Items Properties
 
 Child Elements (Items)
 A grid container contains grid items.
 
 By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.
 
-The grid-column Property:
-The grid-column property defines on which column(s) to place an item.
+### grid-column
+
+grid-column property defines on which column(s) to place an item.
 
 You define where the item will start, and where the item will end.
 

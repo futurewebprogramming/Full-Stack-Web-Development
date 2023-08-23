@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid - Learn CSS Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CSS Grid</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .grid-container{
-            display: grid;
+            width: 800px;
             height: 100vh;
+            display: grid;
             grid-template-columns: repeat(3,200px);
-            /* grid-template-rows: 200px 250px 300px; */
-            /* grid-auto-rows: 100px; */
-            align-content: space-evenly;
-            grid-template: 
-            "first-trow first-row first-row" 40px
-            "second second second" 100px
-            "thirdRow thirdRow thirdRow" 200px / 1fr 1fr 1fr 1fr
-            ;
-            gap: 20px;
+            grid-template-rows: 100px 50px;
+            gap: 10px 40px;
             border: 10px solid;
+            /* justify-content: end; */
+            align-content: end;
         }
         .grid-item{
-             background-color: blueviolet;
+            background-color: blueviolet;
+            /* height: 100px; */
         }
-        .item1{
+        #grid-item1{
             grid-column-start: 1;
             grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
         }
     </style>
 </head>
 <body>
-    <h1>Learn CSS Grid</h1>
+    <h2>CSS Grid</h2>
     <div class="grid-container">
-       <div class="grid-item item1">Item1</div>
-       <div class="grid-item item2">Item2</div>
-       <div class="grid-item item3">Item3</div>
-       <div class="grid-item item4">Item4</div>
-       <div class="grid-item item5">Item5</div>
-       <div class="grid-item item6">Item6</div>
-       <div class="grid-item item7">Item7</div>
-       <div class="grid-item item8">Item8</div>
-       <div class="grid-item item9">Item9</div>
-       <div class="grid-item item10">Item10</div>
+        <div class="grid-item" id="grid-item1">item1</div>
+        <div class="grid-item" id="grid-item2">item2</div>
+        <div class="grid-item" id="grid-item3">item3</div>
+        <div class="grid-item" id="grid-item4">item4</div>
     </div>
 </body>
 </html>
