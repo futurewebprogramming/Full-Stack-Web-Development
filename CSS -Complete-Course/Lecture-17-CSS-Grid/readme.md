@@ -1,10 +1,9 @@
 # Lecture - 17 CSS Grid
 
+[![CSS Grid Container](/Assets/Lecture%20-17%20CSS%20Grid%20-%20Learn%20Complete%20CSS%20Grid%20in%20One%20Video.png)](https://www.youtube.com/@futureprogramming){:target="_blank"}
 ## Grid Layout
 
 CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its one-directional flow has different use cases — and they actually work together quite well! Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.
-
-[![CSS Grid Container](https://css-tricks.com/wp-content/uploads/2018/11/align-content-stretch.svg)](https://www.youtube.com/@futureprogramming){:target="_blank"}
 
 ## Important CSS Grid terminology
 
