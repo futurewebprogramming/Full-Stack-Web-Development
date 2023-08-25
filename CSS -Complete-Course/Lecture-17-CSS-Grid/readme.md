@@ -4,15 +4,21 @@
 
 ## Grid Layout
 
-CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its one-directional flow has different use cases — and they actually work together quite well! Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.
+CSS Grid Layout (aka “Grid” or “CSS Grid”), is a `two-dimensional` grid-based layout system that, `compared` to any web `layout system` of the `past`, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it.
+
+First, we used `tables, then floats, positioning and inline-block`, but all of `these methods` were essentially `hacks` and left out a lot of important functionality (vertical centering, for instance).
+
+`Flexbox` is also a very `great layout tool`, `but` its `one-directional flow` has different use cases — and they actually work together quite well!
+
+`Grid` is the very `first CSS module created specifically` to `solve` the `layout problems` we’ve all been hacking our way around for as long as we’ve been making websites.
 
 ## Important CSS Grid terminology
 
-Before diving into the concepts of Grid it’s important to understand the terminology. Since the terms involved here are all kinda conceptually similar, it’s easy to confuse them with one another if you don’t first memorize their meanings defined by the Grid specification. But don’t worry, there aren’t many of them.
+Before diving into the concepts of Grid `it’s important to understand` the `terminology`. Since the terms involved here are all kinda conceptually similar, it’s easy to confuse them with one another if you don’t first memorize their meanings defined by the Grid specification. But don’t worry, there aren’t many of them.
 
 ## Grid Container
 
-element on which display: grid is applied. It’s the direct parent of all the grid items. In this example container is the grid container.
+html `element` on which `display: grid` is applied. It’s the direct parent of all the grid items. In this example container is the grid container.
 
 ```html
 <div class="container">
@@ -24,11 +30,11 @@ element on which display: grid is applied. It’s the direct parent of all the g
 
 ## Grid Line
 
-dividing lines that make up the structure of the grid. They can be either vertical (“column grid lines”) or horizontal (“row grid lines”) and reside on either side of a row or column. Here the yellow line is an example of a column grid line.
+`dividing lines` that make up the structure of the grid. They can be either `vertical` (“`column grid lines`”) or `horizontal` (“`row grid lines`”) and reside on either side of a row or column. Here the yellow line is an example of a column grid line.
 
-The lines between columns are called column lines.
+The lines between `columns` are called `column lines`.
 
-The lines between rows are called row lines.
+The lines between `rows` are called `row lines`.
 
 ![Grid Lines](https://www.w3schools.com/css/grid_lines.png)
 
@@ -43,23 +49,23 @@ Place a grid item at column line 1, and let it end on column line 3:
 
 ## Grid Columns
 
-The vertical lines of grid items are called columns.
+The `vertical lines` of `grid items` are called `columns`.
 
 ![Gird Colmuns](https://www.w3schools.com/css/grid_columns.png)
 
 ### Grid Rows
 
-The horizontal lines of grid items are called rows.
+The `horizontal lines of grid items` are called `rows`.
 
 ![Grid Rows](https://www.w3schools.com/css/grid_rows.png)
 
 ## Grid Track
 
-space between two adjacent grid lines. You can think of them as the columns or rows of the grid. Here’s the grid track between the second and third-row grid lines.
+`space between two adjacent grid lines`. **You can think of** them as the `columns or rows of the grid`. Here’s the grid track between the second and third-row grid lines.
 
 ## Grid Area
 
-total space surrounded by four grid lines. A grid area may be composed of any number of grid cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.
+total space surrounded by four `grid lines` like this `||`. A grid area may be composed of any number of grid cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.
 
 ## Grid Container Properties
 
@@ -84,7 +90,7 @@ Here are some of the CSS Grid Container properties:
 
 ### Display
 
-Defines the element as a grid container and establishes a new grid formatting context for its contents.
+Defines the element as a `grid container` and establishes a new grid formatting context for its contents.
 
 Values:
 
@@ -101,7 +107,7 @@ All direct children of the grid container automatically become grid items.
 
 ### `grid-template-columns`
 
-grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
+grid-template-columns property `defines the number of columns` in your grid layout, and it can define the width of each column.
 
 value is a space-separated-list, where each value defines the width of the respective column.
 
@@ -132,7 +138,7 @@ Set a size for the 4 columns:
 
 ### `grid-template-rows`
 
-grid-template-rows property defines the height of each row. value is a space-separated-list, where each value defines the height of the respective row:
+grid-template-rows property `defines the height of each row`. value is a space-separated-list, where each value defines the height of the respective row:
 
 ```css
 Example
@@ -144,7 +150,7 @@ Example
 
 ### `grid template areas`
 
-grid-template-areas property specifies named grid areas, establishing the cells in the grid and assigning them names.
+grid-template-areas property `specifies named grid areas`, establishing the `cells` in the `grid and assigning them names`.
 
 Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
 
@@ -265,7 +271,7 @@ Example:
 
 ### `Justify Items`
 
-Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
+`Aligns grid items` along the `inline (row) axis` (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
 
 Values:
 
@@ -283,7 +289,7 @@ Values:
 
 ### align items
 
-Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
+`Aligns grid items` along the `block (column) axis` (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
 
 Values:
 
@@ -315,10 +321,9 @@ Values:
 }
 ```
 
-
 ### `justify-content`
 
-Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
+Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This `property aligns the grid along the inline (row) axis` (as opposed to align-content which aligns the grid along the block (column) axis).
 
 Values:
 
@@ -343,9 +348,9 @@ Examples:
 
 ### `align-content`
 
-align-content property is used to vertically align the whole grid inside the container.
+align-content property is used to `vertically align the whole grid` inside the container.
 
-Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
+Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the **block (column) axis** (as opposed to justify-content which aligns the grid along the inline (row) axis).
 
 Values:
 
@@ -374,7 +379,7 @@ place-content property is used in flexbox and grid layouts, and is a `shorthand`
 
 `align-content`
 `justify-content`
-If the place-content property has two 
+If the place-content property has two
 
 Values:
 
@@ -392,7 +397,7 @@ place-content: end;
 
 ### grid-auto-columns & grid-auto-rows
 
-Specifies the size of any auto-generated grid tracks (aka implicit grid tracks). Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
+`Specifies the size` of any auto-generated grid tracks (aka implicit grid tracks). `Implicit tracks get created` when there are `more grid items` than cells in the grid or when a grid item is placed outside of the explicit grid.
 
 Values:
 
@@ -461,6 +466,7 @@ Values:
 `<grid-template-rows>` / [ auto-flow && dense? ] `<grid-auto-columns>`? – sets `grid-template-rows` to the specified value.
 
 If the auto-flow keyword is to the right of the slash, it sets grid-auto-flow to column. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-columns is omitted, it is set to auto.
+
 [ auto-flow && dense? ] `<grid-auto-rows>`? / `<grid-template-columns>` – sets grid-template-columns to the specified value. If the auto-flow keyword is to the left of the slash, it sets grid-auto-flow to row. If the dense keyword is specified additionally, the auto-placement algorithm uses a “dense” packing algorithm. If grid-auto-rows is omitted, it is set to auto.
 Examples:
 
