@@ -1,6 +1,7 @@
 # Lecture - 17 CSS Grid
 
 [![CSS Grid Container](/Assets/Lecture%20-17%20CSS%20Grid%20-%20Learn%20Complete%20CSS%20Grid%20in%20One%20Video.png)](https://www.youtube.com/@futureprogramming){:target="_blank"}
+
 ## Grid Layout
 
 CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system that, compared to any web layout system of the past, completely changes the way we design user interfaces. CSS has always been used to layout our web pages, but it’s never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox is also a very great layout tool, but its one-directional flow has different use cases — and they actually work together quite well! Grid is the very first CSS module created specifically to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making websites.
@@ -59,72 +60,6 @@ space between two adjacent grid lines. You can think of them as the columns or r
 ## Grid Area
 
 total space surrounded by four grid lines. A grid area may be composed of any number of grid cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.
-
-## Special Units & Functions
-
-### fr units
-
-You’ll likely end up using a lot of fractional units in CSS Grid, like 1fr. They essentially mean “portion of the remaining space”. So a declaration like:
-
-```css
-grid-template-columns: 1fr 3fr;
-```
-
-Means, loosely, 25% 75%. Except that those percentage values are much more firm than fractional units are. For example, if you added padding to those percentage-based columns, now you’ve broken 100% width (assuming a content-box box model). Fractional units also much more friendly in combination with other units, as you can imagine:
-
-```css
-grid-template-columns: 50px min-content 1fr;
-```
-
-### Sizing Keywords
-
-When sizing rows and columns, you can use all the lengths you are used to, like px, rem, %, etc, but you also have keywords:
-
-`min-content`: the minimum size of the content. Imagine a line of text like “E pluribus unum”, the min-content is likely the width of the word “pluribus”.
-`max-content`: the maximum size of the content. Imagine the sentence above, the max-content is the length of the whole sentence.
-auto: this keyword is a lot like fr units, except that they “lose” the fight in sizing against fr units when allocating the remaining space.
-Fractional units: see above
-
-### Sizing Functions
-
-`fit-content()` function uses the space available, but never less than min-content and never more than max-content.
-`minmax() function` does exactly what it seems like: it sets a minimum and maximum value for what the length is able to be. This is useful for in combination with relative units. Like you may want a column to be only able to shrink so far. This is extremely useful and probably what you want:
-
-```css
-grid-template-columns: minmax(100px, 1fr) 3fr;
-```
-
-min() function.
-max() function.
-
-## repeat() Function and Keywords
-
-repeat() function can save some typing:
-
-```css
-grid-template-columns:
-  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-/* easier: */
-grid-template-columns:
-  repeat(8, 1fr);
-
-/* especially when: */
-grid-template-columns:
-  repeat(8, minmax(10px, 1fr));
-```
-
-But repeat() can get extra fancy when combined with keywords:
-
-`auto-fill`: Fit as many possible columns as possible on a row, even if they are empty.
-`auto-fit`: Fit whatever columns there are into the space. Prefer expanding columns to fill space rather than empty columns.
-This bears the most famous snippet in all of CSS Grid and one of the all-time great 
-
-
-```css
-grid-template-columns: 
-  repeat(auto-fit, minmax(250px, 1fr));
-```
 
 ## Grid Container Properties
 
@@ -591,6 +526,72 @@ That’s equivalent to this:
   grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end];
   grid-template-columns: auto 50px auto;    
 }
+```
+
+## Special Units & Functions
+
+### fr units
+
+You’ll likely end up using a lot of fractional units in CSS Grid, like 1fr. They essentially mean “portion of the remaining space”. So a declaration like:
+
+```css
+grid-template-columns: 1fr 3fr;
+```
+
+Means, loosely, 25% 75%. Except that those percentage values are much more firm than fractional units are. For example, if you added padding to those percentage-based columns, now you’ve broken 100% width (assuming a content-box box model). Fractional units also much more friendly in combination with other units, as you can imagine:
+
+```css
+grid-template-columns: 50px min-content 1fr;
+```
+
+### Sizing Keywords
+
+When sizing rows and columns, you can use all the lengths you are used to, like px, rem, %, etc, but you also have keywords:
+
+`min-content`: the minimum size of the content. Imagine a line of text like “E pluribus unum”, the min-content is likely the width of the word “pluribus”.
+
+`max-content`: the maximum size of the content. Imagine the sentence above, the max-content is the length of the whole sentence.
+
+`auto`: this keyword is a lot like fr units, except that they “lose” the fight in sizing against fr units when allocating the remaining space.
+Fractional units: see above
+
+### Sizing Functions
+
+`fit-content()` function uses the space available, but never less than min-content and never more than max-content.
+
+`minmax() function` does exactly what it seems like: it sets a minimum and maximum value for what the length is able to be. This is useful for in combination with relative units. Like you may want a column to be only able to shrink so far. This is extremely useful and probably what you want:
+
+```css
+grid-template-columns: minmax(100px, 1fr) 3fr;
+```
+
+## repeat() Function and Keywords
+
+repeat() function can save some typing:
+
+```css
+grid-template-columns:
+  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+/* easier: */
+grid-template-columns:
+  repeat(8, 1fr);
+
+/* especially when: */
+grid-template-columns:
+  repeat(8, minmax(10px, 1fr));
+```
+
+But repeat() can get extra fancy when combined with keywords:
+
+`auto-fill`: Fit as many possible columns as possible on a row, even if they are empty.
+
+`auto-fit`: Fit whatever columns there are into the space. Prefer expanding columns to fill space rather than empty columns.
+This bears the most famous snippet in all of CSS Grid and one of the all-time great
+
+```css
+grid-template-columns: 
+  repeat(auto-fit, minmax(250px, 1fr));
 ```
 
 ## grid items Properties
