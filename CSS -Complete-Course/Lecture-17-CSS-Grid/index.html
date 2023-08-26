@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning About CSS Grid</title>
+    <title>Learning CSS Grid</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .grid-item1{
-            grid-area: header;
-        }
-        .grid-item2{
-            grid-area: main;
-        }
-        .grid-item3{
-            grid-area: footer;
-        }
         .grid-container{
-            /* height: 100vh; */
             border: 2px solid;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            /* areas rows / columns */
-            /* grid-template: "header header header" 200px
-            "main main ." 300px
-            "main main ." 300px
-            "footer footer footer" 100px / 100px 200px 300px
-            ; */
+            /* grid-template-columns: repeat(3, 200px); 
+             grid-template-rows: 100px 200px; */
+            /* grid-template-areas: "header header header"
+            "sidebar main main"
+            "sidebar main main"
+            "footer footer footer"; */
+            /* grid-template: "header header header" 100px
+            "sidebar main main" 200px
+            "sidebar main main" 200px
+            "footer footer footer" 300px / 1fr 1fr 1fr; */
+            /* column-gap: 20px;
+            row-gap: 30px; */
+            /* gap: 30px 10px; */
+            gap: 20px;
+            /* justify-items: start; */
+            /* align-items: center; */
+            /* place-items: center; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* place-content: center; */
+            /* height: 100vh; */
+            /* grid-auto-rows: 100px; */
+            /* grid-auto-flow: column;
+            grid-auto-columns: 200px; */
+            /* for explicit values */
+            /* grid: colums / rows */
+            grid-template-columns: repeat(3, minmax(100px, 1fr)); 
+             grid-template-rows: 100px 200px;
+            /* grid: 100px 200px / repeat(3, 200px); */
+            /* implicit values */
+            /* grid: auto-flow 100px / 200px 200px 200px; */
         }
         .grid-item{
-            border: 2px solid blue;
+            background-color: blue;
+            /* border: 2px solid lightblue; */
         }
-        
-        
+        #grid-item1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column: 1 / 3; */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            /* grid-row: 1 / 3; */
+            /* grid-column: span 2; */
+            /* grid-row: span 2; */
+            /* grid-area : row-start / column start / row-end / column-end */
+            /* grid-area: 1 / 1 / 3 / 3; */
+            /* justify-self: start; */
+            /* align-self: start; */
+            place-self: center;
+        }
     </style>
 </head>
 <body>
-    <h2>CSS Grid</h2>
     <div class="grid-container">
-        <div class="grid-item" id="grid-item1">item1</div>
-        <div class="grid-item" id="grid-item2">item2</div>
-        <div class="grid-item" id="grid-item3">item3</div>
-        <div class="grid-item" id="grid-item4">item4</div>
+        <div class="grid-item" id="grid-item1">Header</div>
+        <div class="grid-item" id="grid-item2">sidebar</div>
+        <div class="grid-item" id="grid-item3">main</div>
+        <div class="grid-item" id="grid-item4">Footer</div>
         <div class="grid-item" id="grid-item5">item5</div>
         <div class="grid-item" id="grid-item6">item6</div>
         <div class="grid-item" id="grid-item7">item7</div>
