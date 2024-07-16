@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Properties</title>
+    <style>
+        :root{
+            --priamry-color: deeppink;
+            --secondary-color: dodgerblue;
+        }
+        h2{
+            color: var(--priamry-color);
+        }
+        p{
+            color: var(--priamry-color);
+        }
+        li>a{
+            color: var(--priamry-color);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Custom Properties</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+        <li><a href="#">Home</a></li>
+    </ul>
+</body>
+</html>
