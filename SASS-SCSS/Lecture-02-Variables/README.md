@@ -2,9 +2,16 @@
 
 ## Sass Variables
 
+## Topics Covered
+
+- Using Variables
+- Nesting Rules
+
 Variables are a way to store information that you can re-use later.
 
 With Sass, you can store information in variables, like:
+
+Variables in SASS/SCSS allow you to store values that you can reuse throughout your stylesheet. This makes it easy to manage and update your styles. For example, if you need to change your primary color, you only need to update the variable, and it will automatically update everywhere the variable is used.
 
 ```strings
 numbers
