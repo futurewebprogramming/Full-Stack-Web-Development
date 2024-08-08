@@ -55,8 +55,8 @@ Here is the calculation of total width and Height of element:
 
 ### Element total width:
 
-> width = width + left padding + right padding + left border + right border + left margin + right margin
+> width = width + left padding + right padding + left border + right border + left Outline + Right Outline
 
 #### Total height of an element
 
->height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+>height = height + top padding + bottom padding + top border + bottom border + + Top Outline + Bottom Outline
